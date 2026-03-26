@@ -1,0 +1,107 @@
+/* Dot Navigation (Desktop) */
+.dot-nav {
+  position: fixed;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 1000;
+}
+
+.dot-nav-item {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: all 0.4s var(--ease-out-quart);
+  padding: 0;
+  position: relative;
+}
+
+.dot-nav-item:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: scale(1.5);
+}
+
+.dot-nav-item.active {
+  background: var(--purple-400);
+  transform: scale(1.5);
+  box-shadow: 0 0 16px rgba(167, 139, 250, 0.5);
+}
+
+.dot-nav-tooltip {
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(15, 7, 32, 0.9);
+  color: var(--ink-on-purple);
+  padding: 5px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.68rem;
+  font-family: var(--font-mono);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.dot-nav-item:hover .dot-nav-tooltip { opacity: 1; }
+
+/* Slide Counter (Mobile) */
+.slide-counter {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  background: rgba(15, 7, 32, 0.5);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  display: none;
+  gap: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.slide-counter-current {
+  color: var(--purple-300);
+  font-weight: 700;
+}
+
+.slide-counter-sep { margin: 0 2px; opacity: 0.3; }
+
+/* Keyboard hint */
+.keyboard-hint {
+  position: fixed;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: rgba(255, 255, 255, 0.22);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  z-index: 1000;
+  transition: opacity 0.6s;
+  pointer-events: none;
+}
+
+.keyboard-hint.hidden { opacity: 0; }
+
+@media (max-width: 768px) {
+  .dot-nav { display: none; }
+  .slide-counter { display: flex; }
+  .keyboard-hint { display: none; }
+}

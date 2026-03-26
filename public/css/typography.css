@@ -1,0 +1,94 @@
+/* Fonts — Plus Jakarta Sans for warmth, Clash Display for punch */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap');
+
+/* Type Scale — tighter headings, generous body */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+}
+
+h1 {
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2.8rem);
+  letter-spacing: -0.03em;
+}
+
+h3 {
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h4 {
+  font-size: clamp(0.92rem, 1.4vw, 1.05rem);
+  font-weight: 700;
+  letter-spacing: -0.005em;
+}
+
+p {
+  font-size: clamp(0.94rem, 1.1vw, 1.05rem);
+  line-height: 1.72;
+  color: var(--ink-dim);
+}
+
+/* Utility classes */
+.text-mono { font-family: var(--font-mono); }
+.text-sm { font-size: 0.88rem; }
+.text-xs {
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.text-label {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.text-purple { color: var(--purple-500); }
+.text-white { color: var(--ink-on-purple); }
+.text-dim { color: var(--ink-dim); }
+.text-center { text-align: center; }
+
+/* Section eyebrow — small label above headings */
+.section-eyebrow {
+  display: inline-block;
+  margin-bottom: var(--space-md);
+  color: var(--purple-500);
+}
+
+.section-eyebrow-block {
+  display: block;
+}
+
+.section-eyebrow-light {
+  color: var(--purple-200);
+}
+
+.section-eyebrow-dark {
+  color: var(--purple-300);
+}
+
+.section-subtitle-dark {
+  color: var(--ink-on-purple-dim);
+}
+
+/* Logo */
+.logo-text {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}

@@ -1,0 +1,161 @@
+/* =========================================
+   REVEAL SYSTEM — scroll-triggered entrances
+   ========================================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s var(--ease-out-expo), transform 0.8s var(--ease-out-expo);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-35px);
+  transition: opacity 0.8s var(--ease-out-expo), transform 0.8s var(--ease-out-expo);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(35px);
+  transition: opacity 0.8s var(--ease-out-expo), transform 0.8s var(--ease-out-expo);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 0.8s var(--ease-out-expo), transform 0.8s var(--ease-out-expo);
+}
+
+.slide-active .reveal,
+.slide-active .reveal-left,
+.slide-active .reveal-right,
+.slide-active .reveal-scale {
+  opacity: 1;
+  transform: none;
+}
+
+/* Stagger delays — smooth cascade */
+.delay-1 { transition-delay: 0.08s; }
+.delay-2 { transition-delay: 0.16s; }
+.delay-3 { transition-delay: 0.24s; }
+.delay-4 { transition-delay: 0.34s; }
+.delay-5 { transition-delay: 0.44s; }
+.delay-6 { transition-delay: 0.54s; }
+.delay-7 { transition-delay: 0.64s; }
+.delay-8 { transition-delay: 0.74s; }
+
+/* =========================================
+   TITLE SLAM — letters drop in with spring
+   ========================================= */
+.title-slam {
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.slam-letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-60%) scale(1.4);
+  filter: blur(6px);
+  will-change: transform, opacity, filter;
+}
+
+.slide-active .slam-letter {
+  animation: slam-in 0.55s var(--ease-spring) forwards;
+  animation-delay: calc(0.2s + var(--i) * 0.08s);
+}
+
+@keyframes slam-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-60%) scale(1.4);
+    filter: blur(6px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+  75% {
+    transform: translateY(4%) scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0px);
+  }
+}
+
+/* =========================================
+   FLOAT — gentle hover
+   ========================================= */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-14px); }
+}
+
+.float {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* =========================================
+   GLOW PULSE
+   ========================================= */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(109, 63, 212, 0.3); }
+  50%      { box-shadow: 0 0 0 14px rgba(109, 63, 212, 0); }
+}
+
+.pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
+
+/* =========================================
+   LINE DRAW
+   ========================================= */
+@keyframes draw-line {
+  from { transform: scaleY(0); }
+  to   { transform: scaleY(1); }
+}
+
+.draw-line {
+  transform-origin: top;
+  transform: scaleY(0);
+}
+
+.slide-active .draw-line {
+  animation: draw-line 1s var(--ease-out-expo) 0.5s forwards;
+}
+
+/* =========================================
+   TABLE WIPE
+   ========================================= */
+@keyframes wipe-in {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0 0 0); }
+}
+
+.wipe-in { clip-path: inset(0 100% 0 0); }
+
+.slide-active .wipe-in {
+  animation: wipe-in 1.2s var(--ease-out-expo) 0.3s forwards;
+}
+
+/* =========================================
+   REDUCED MOTION
+   ========================================= */
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal-left, .reveal-right, .reveal-scale {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .slam-letter {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    animation: none;
+  }
+
+  .float { animation: none; }
+  .pulse-glow { animation: none; }
+  .draw-line { transform: scaleY(1); animation: none !important; }
+  .wipe-in { clip-path: none; animation: none !important; }
+}

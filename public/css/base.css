@@ -1,0 +1,162 @@
+/* Reset */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--purple-950);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+::selection {
+  background: var(--purple-300);
+  color: var(--purple-950);
+}
+
+/* Scroll Snap Container */
+.deck {
+  height: 100vh;
+  height: 100dvh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overscroll-behavior-y: contain;
+}
+
+.slide {
+  min-height: 100vh;
+  min-height: 100dvh;
+  scroll-snap-align: start;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.slide-inner {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: var(--space-3xl) var(--space-xl);
+  position: relative;
+  z-index: 2;
+}
+
+/* Noise Texture — subtle analog warmth */
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.025;
+  mix-blend-mode: soft-light;
+}
+
+.noise-overlay svg { width: 100%; height: 100%; }
+
+/* Breathing Purple Blobs — ambient depth */
+.blob {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(140px);
+  pointer-events: none;
+  z-index: 0;
+  will-change: transform;
+}
+
+.blob-1 {
+  width: 700px;
+  height: 700px;
+  background: rgba(109, 63, 212, 0.08);
+  top: -250px;
+  right: -200px;
+  animation: breathe 14s ease-in-out infinite alternate;
+}
+
+.blob-2 {
+  width: 550px;
+  height: 550px;
+  background: rgba(74, 36, 160, 0.06);
+  bottom: -200px;
+  left: -150px;
+  animation: breathe 11s ease-in-out infinite alternate;
+  animation-delay: -6s;
+}
+
+.blob-3 {
+  width: 450px;
+  height: 450px;
+  background: rgba(139, 92, 246, 0.05);
+  top: 45%;
+  left: 45%;
+  animation: breathe 16s ease-in-out infinite alternate;
+  animation-delay: -3s;
+}
+
+@keyframes breathe {
+  from { transform: scale(1) translate(0, 0); }
+  to   { transform: scale(1.18) translate(25px, -18px); }
+}
+
+/* Checkerboard Pattern — brand signature */
+.checkerboard {
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-conic-gradient(
+      rgba(139, 92, 246, 0.04) 0% 25%,
+      transparent 0% 50%
+    );
+  background-size: 50px 50px;
+  pointer-events: none;
+  z-index: 1;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+}
+
+/* Progress Bar */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--purple-500), var(--purple-300));
+  z-index: 10000;
+  transition: width 0.35s var(--ease-out-quart);
+  width: 0%;
+  box-shadow: 0 0 12px rgba(139, 92, 246, 0.4);
+}
+
+/* Utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blob { animation: none; }
+  .deck { scroll-behavior: auto; }
+  html { scroll-behavior: auto; }
+}

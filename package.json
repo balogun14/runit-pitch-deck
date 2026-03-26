@@ -1,0 +1,16 @@
+{
+  "name": "runit-pitch-deck",
+  "version": "1.0.0",
+  "description": "RunIt Interactive Pitch Deck",
+  "scripts": {
+    "dev": "bun run --watch index.ts",
+    "start": "bun run index.ts"
+  },
+  "dependencies": {
+    "htmx.org": "^2.0.8"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5"
+  }
+}

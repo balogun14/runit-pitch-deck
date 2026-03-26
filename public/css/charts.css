@@ -1,0 +1,92 @@
+/* Donut Charts — animated conic gradient with sweep */
+.donut {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--donut-color, var(--purple-500)) 0deg,
+    var(--donut-color, var(--purple-500)) calc(var(--donut-fill, 0) * 3.6deg),
+    rgba(255, 255, 255, 0.06) calc(var(--donut-fill, 0) * 3.6deg),
+    rgba(255, 255, 255, 0.06) 360deg
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-md);
+  position: relative;
+  transform: rotate(-90deg);
+  transition: box-shadow 0.6s var(--ease-out-quart);
+  box-shadow: 0 0 30px rgba(109, 63, 212, 0.1);
+}
+
+.donut:hover {
+  transform: rotate(-90deg) scale(1.08);
+}
+
+/* Sweep rotation: starts at -90deg (12 o'clock) and stays there.
+   The conic-gradient fill animates via JS, creating a sweep effect
+   because the ring "draws" from the top. */
+
+/* Glow pulse when donut finishes animating */
+.donut.sweep-done {
+  box-shadow:
+    0 0 30px rgba(109, 63, 212, 0.1),
+    0 0 40px rgba(109, 63, 212, 0.15);
+  animation: donut-settle 0.5s var(--ease-out-quart) forwards;
+}
+
+@keyframes donut-settle {
+  0% {
+    box-shadow:
+      0 0 30px rgba(109, 63, 212, 0.1),
+      0 0 50px rgba(109, 63, 212, 0.25);
+  }
+  100% {
+    box-shadow:
+      0 0 30px rgba(109, 63, 212, 0.1),
+      0 0 20px rgba(109, 63, 212, 0.08);
+  }
+}
+
+.donut-inner {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: var(--purple-900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: rotate(90deg);
+}
+
+.donut-value {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--ink-on-purple);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .donut {
+    transform: rotate(-90deg);
+    transition: none;
+  }
+
+  .donut:hover {
+    transform: rotate(-90deg);
+  }
+
+  .donut.sweep-done {
+    animation: none;
+  }
+}
+
+/* Process Flow Arrows */
+.flow-arrow svg { overflow: visible; }
+
+.flow-arrow line,
+.flow-arrow polyline {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
