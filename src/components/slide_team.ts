@@ -22,7 +22,7 @@ export function renderTeam(): string {
     <div class="slide-inner text-center">
       <span class="section-eyebrow section-eyebrow-dark reveal text-label">The People</span>
       <h2 class="section-title reveal delay-1 text-white">Built by Students,<br>for Students</h2>
-      <p class="section-subtitle section-subtitle-dark reveal delay-2">
+      <p class="section-subtitle text-white reveal delay-2">
         A 5-person technical & operational founding team who live the problem every day.
       </p>
 
