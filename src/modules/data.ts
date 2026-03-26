@@ -191,8 +191,8 @@ export const team: (TeamMember & { photo?: string })[] = [
   { name: "Ekundayo David", role: "CEO", initials: "ED", photo: "/public/images/team/david.jpeg" },
   { name: "Balogun Muhammed-Awwal", role: "CTO", initials: "BM", photo: "/public/images/team/balogun.jpeg" },
   { name: "Arifalo Rufus", role: "CMO", initials: "AR", photo: "/public/images/team/rufus.jpeg" },
-  { name: "Obidiya Erioluwanmi", role: "COO", initials: "OE" },
-  { name: "Okerafor Destiny", role: "CFO", initials: "OD" },
+  { name: "Obidiya Erioluwanmi", role: "COO", initials: "OE", photo: "/public/images/team/Eri.jpeg" },
+  { name: "Okerafor Destiny", role: "CFO", initials: "OD", photo: "/public/images/team/dezzi.jpeg" },
 ];
 
 export const fundAllocations: FundAllocation[] = [
