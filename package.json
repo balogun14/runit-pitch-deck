@@ -4,7 +4,8 @@
   "description": "RunIt Interactive Pitch Deck",
   "scripts": {
     "dev": "bun run --watch index.ts",
-    "start": "bun run index.ts"
+    "start": "bun run index.ts",
+    "build": "bun run build.ts"
   },
   "dependencies": {
     "htmx.org": "^2.0.8"
