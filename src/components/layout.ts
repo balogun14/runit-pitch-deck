@@ -21,8 +21,8 @@ export function renderAllSlides(): string {
     renderRevenue(),
     renderCompetition(),
     renderTeam(),
-    renderAsk(),
     renderCanvas(),
+    renderAsk(),
   ].join("\n");
 }
 
@@ -34,7 +34,7 @@ export function renderPage(): string {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="RunIt - Campus Life Meets Convenience. An interactive pitch deck for Africa's campus logistics platform." />
   <title>RunIt | Campus Life Meets Convenience</title>
-  <link rel="stylesheet" href="/public/css/main.css" />
+  <link rel="stylesheet" href="/public/css/main.css?v=2" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏃</text></svg>" />
 </head>
 <body>

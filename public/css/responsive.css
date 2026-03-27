@@ -351,8 +351,8 @@
   .qr-section { margin-top: var(--space-lg); }
 
   /* ===== Logo ===== */
-  .deck-logo { top: 12px; left: 16px; }
-  .deck-logo-img { height: 18px; }
+  .deck-logo { bottom: 12px; right: 12px; }
+  .deck-logo-img { height: 60px; }
 
   /* ===== Canvas ===== */
   .canvas-grid {
