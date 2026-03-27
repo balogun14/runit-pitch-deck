@@ -58,17 +58,20 @@ export function renderMarket(): string {
       <div class="market-funnel">
         ${funnelHtml}
       </div>
-      <div class="whynow-section">
-        <h3 class="whynow-heading reveal delay-3 text-center">Why Now? The Perfect Storm of 2026</h3>
-        <div class="whynow-grid">
-          ${reasonsHtml}
-        </div>
-      </div>
 
-      <div class="four-ps-section" style="margin-top: var(--space-xl);">
-        <h3 class="whynow-heading reveal delay-4 text-center">Go-To-Market (4Ps)</h3>
-        <div class="four-ps-grid">
-          ${fourPsHtml}
+      <div class="market-bottom-row">
+        <div class="whynow-section">
+          <h3 class="whynow-heading reveal delay-3">Why Now? The Perfect Storm of 2026</h3>
+          <div class="whynow-grid">
+            ${reasonsHtml}
+          </div>
+        </div>
+
+        <div class="four-ps-section">
+          <h3 class="whynow-heading reveal delay-4">Go-To-Market (4Ps)</h3>
+          <div class="four-ps-grid">
+            ${fourPsHtml}
+          </div>
         </div>
       </div>
     </div>

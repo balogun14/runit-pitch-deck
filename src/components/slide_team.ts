@@ -5,14 +5,22 @@ export function renderTeam(): string {
     .map(
       (m, i) => `
       <div class="team-member reveal-scale delay-${i + 1}">
-        <div class="team-photo">
-          ${m.photo
-            ? `<img src="${m.photo}" alt="${m.name}" loading="lazy" />`
-            : `<div class="team-initials">${m.initials}</div>`
-          }
+        <div class="team-card-inner">
+          <div class="team-photo-wrapper">
+            <div class="team-photo">
+              ${m.photo
+                ? `<img src="${m.photo}" alt="${m.name}" loading="lazy" />`
+                : `<div class="team-initials">${m.initials}</div>`
+              }
+            </div>
+            <div class="photo-glow"></div>
+          </div>
+          <h4 class="team-name">${m.name}</h4>
+          <div class="team-role">${m.role}</div>
+          <div class="team-skills">
+            ${m.skills?.map(s => `<span class="team-skill-tag">${s}</span>`).join("") || ""}
+          </div>
         </div>
-        <h4 class="team-name">${m.name}</h4>
-        <span class="team-role">${m.role}</span>
       </div>`
     )
     .join("");

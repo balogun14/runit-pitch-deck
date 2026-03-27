@@ -2,6 +2,8 @@ export interface TeamMember {
   name: string;
   role: string;
   initials: string;
+  photo?: string;
+  skills?: string[];
 }
 
 export interface ProcessStep {
@@ -193,12 +195,42 @@ export const unfairAdvantages = [
   { title: "The Market Sets the Price", description: "Students negotiate their own fair rates, not platform-dictated fees." },
 ];
 
-export const team: (TeamMember & { photo?: string })[] = [
-  { name: "Ekundayo David", role: "CEO", initials: "ED", photo: "/public/images/team/david.jpeg" },
-  { name: "Balogun Muhammed-Awwal", role: "CTO", initials: "BM", photo: "/public/images/team/balogun.jpeg" },
-  { name: "Arifalo Rufus", role: "CMO", initials: "AR", photo: "/public/images/team/rufus.jpeg" },
-  { name: "Obidiya Erioluwanmi", role: "COO", initials: "OE", photo: "/public/images/team/Eri.jpeg" },
-  { name: "Okerafor Destiny", role: "CFO", initials: "OD", photo: "/public/images/team/dezzi.jpeg" },
+export const team: TeamMember[] = [
+  { 
+    name: "Ekundayo David", 
+    role: "CEO", 
+    initials: "ED", 
+    photo: "/public/images/team/david.jpeg",
+    skills: ["Business Strategy", "Partnerships", "Growth"]
+  },
+  { 
+    name: "Balogun Muhammed-Awwal", 
+    role: "CTO", 
+    initials: "BM", 
+    photo: "/public/images/team/balogun.jpeg",
+    skills: ["9+ Yrs Software Engineering", "Full-Stack Architecture", "Technical Lead"]
+  },
+  { 
+    name: "Arifalo Rufus", 
+    role: "CMO", 
+    initials: "AR", 
+    photo: "/public/images/team/rufus.jpeg",
+    skills: ["Growth Marketing", "Brand Identity", "User Acquisition"]
+  },
+  { 
+    name: "Obidiya Erioluwanmi", 
+    role: "COO", 
+    initials: "OE", 
+    photo: "/public/images/team/Eri.jpeg",
+    skills: ["Operations", "Logistics", "Community Mgmt"]
+  },
+  { 
+    name: "Okerafor Destiny", 
+    role: "CFO", 
+    initials: "OD", 
+    photo: "/public/images/team/dezzi.jpeg",
+    skills: ["Financial Models", "Risk Analysis", "Governance"]
+  },
 ];
 
 export const fundAllocations: FundAllocation[] = [
