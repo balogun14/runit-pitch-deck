@@ -208,7 +208,7 @@ export const team: TeamMember[] = [
     role: "CTO", 
     initials: "BM", 
     photo: "/public/images/team/balogun.jpeg",
-    skills: ["9+ Yrs Software Engineering", "Full-Stack Architecture", "Technical Lead"]
+    skills: ["9+ Yrs Software Engineering", "System Architecture", "Technical Lead"]
   },
   { 
     name: "Arifalo Rufus", 
@@ -231,6 +231,20 @@ export const team: TeamMember[] = [
     photo: "/public/images/team/dezzi.jpeg",
     skills: ["Financial Models", "Risk Analysis", "Governance"]
   },
+  {
+    name: "Ogunmola Helen",
+    role: "CFO",
+    initials: "OH",
+    photo: "/public/images/team/helen.jpeg",
+    skills: ["Financial Reporting & Analysis", "Data Analyst"]
+  },
+  {
+    name: "Marvelous Olubo",
+    role: "COO",
+    initials: "MO",
+    photo: "/public/images/team/marvelous.jpeg",
+    skills: ["Brand Storyteller", "Event and Red Carpet Host", "COO, Medicpreneur"]
+  }
 ];
 
 export const fundAllocations: FundAllocation[] = [

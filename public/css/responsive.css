@@ -276,17 +276,18 @@
 
   /* ===== Team ===== */
   .team-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: var(--space-md);
-    justify-items: center;
     margin-top: var(--space-xl);
   }
 
   .team-card-inner {
-    width: 160px;
-    padding: var(--space-md);
-    border-radius: 16px;
+    width: 154px;
+    min-height: 260px;
+    padding: var(--space-md) var(--space-sm);
+    border-radius: 12px;
   }
 
   .team-photo { width: 70px; height: 70px; }

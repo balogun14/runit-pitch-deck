@@ -731,6 +731,7 @@
 
 .team-member {
   perspective: 1000px;
+  display: flex;
 }
 
 .team-card-inner {
@@ -738,9 +739,10 @@
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 24px;
-  padding: var(--space-xl);
-  width: 220px;
+  border-radius: 20px;
+  padding: var(--space-lg) var(--space-md);
+  width: 190px;
+  min-height: 290px;
   display: flex;
   flex-direction: column;
   align-items: center;
