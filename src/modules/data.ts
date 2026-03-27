@@ -233,14 +233,14 @@ export const team: TeamMember[] = [
   },
   {
     name: "Ogunmola Helen",
-    role: "CFO",
+    role: "Financial Lead",
     initials: "OH",
     photo: "/public/images/team/helen.jpeg",
     skills: ["Financial Reporting & Analysis", "Data Analyst"]
   },
   {
     name: "Marvelous Olubo",
-    role: "COO",
+    role: "Marketing Lead",
     initials: "MO",
     photo: "/public/images/team/marvelous.jpeg",
     skills: ["Brand Storyteller", "Event and Red Carpet Host", "COO, Medicpreneur"]
