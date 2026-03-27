@@ -1,4 +1,4 @@
-import { marketFunnel, whyNowReasons } from "../modules/data";
+import { marketFunnel, whyNowReasons, fourPs } from "../modules/data";
 
 export function renderMarket(): string {
   const funnelHtml = marketFunnel
@@ -28,6 +28,24 @@ export function renderMarket(): string {
     )
     .join("");
 
+  const fourPsHtml = fourPs
+    .map(
+      (p, i) => `
+      <div class="whynow-card reveal delay-${i + 4}">
+        <div class="four-ps-icon">${p.icon}</div>
+        <div class="four-ps-content">
+          <h4 class="four-ps-title">${p.title}</h4>
+          ${p.description ? `<p class="four-ps-desc">${p.description}</p>` : ''}
+          ${p.bullets ? `
+            <ul class="four-ps-bullets">
+              ${p.bullets.map(b => `<li>${b}</li>`).join('')}
+            </ul>
+          ` : ''}
+        </div>
+      </div>`
+    )
+    .join("");
+
   return `
   <section class="slide slide-market" data-slide="market">
     <div class="slide-inner">
@@ -42,6 +60,13 @@ export function renderMarket(): string {
         <h3 class="whynow-heading reveal delay-3 text-center">Why Now? The Perfect Storm of 2026</h3>
         <div class="whynow-grid">
           ${reasonsHtml}
+        </div>
+      </div>
+
+      <div class="four-ps-section" style="margin-top: var(--space-xl);">
+        <h3 class="whynow-heading reveal delay-4 text-center">Go-To-Market (4Ps)</h3>
+        <div class="four-ps-grid">
+          ${fourPsHtml}
         </div>
       </div>
     </div>

@@ -29,9 +29,10 @@
 
   .advantages-grid { grid-template-columns: repeat(2, 1fr); }
   .donuts-grid { grid-template-columns: repeat(2, 1fr); }
-  .swot-compact-grid { grid-template-columns: 1fr; }
+  .swot-compact-grid { grid-template-columns: repeat(2, 1fr); }
   .financials-grid { grid-template-columns: 1fr 1fr; }
   .streams-grid { grid-template-columns: 1fr; }
+  .four-ps-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 /* Mobile */
@@ -175,6 +176,7 @@
   .whynow-section { margin-top: var(--space-md); }
   .whynow-heading { font-size: 1rem; margin-bottom: var(--space-md); }
   .whynow-grid { grid-template-columns: 1fr; gap: var(--space-sm); }
+  .four-ps-grid { grid-template-columns: 1fr; gap: var(--space-sm); }
 
   .whynow-card {
     display: flex;

@@ -11,6 +11,13 @@ export interface ProcessStep {
   icon: string;
 }
 
+export interface FourPInfo {
+  title: string;
+  description: string;
+  icon: string;
+  bullets?: string[];
+}
+
 export interface ComparisonRow {
   feature: string;
   whatsapp: { status: "good" | "bad" | "warn"; text: string };
@@ -91,6 +98,35 @@ export const whyNowReasons = [
     description: 'Highest "Need-to-Time" ratio in Nigeria',
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`,
   },
+];
+
+export const fourPs: FourPInfo[] = [
+  {
+    title: "Product",
+    description: "Convenient errand execution platform",
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>`,
+  },
+  {
+    title: "Price",
+    description: "Low-cost, student-friendly pricing",
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z"/><path d="M7 7h.01"/></svg>`,
+  },
+  {
+    title: "Place",
+    description: "Campus-first → expand to urban areas",
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>`,
+  },
+  {
+    title: "Promotion",
+    description: "",
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>`,
+    bullets: [
+      "Campus ambassadors",
+      "Referral programs",
+      "WhatsApp virality",
+      "Student influencers"
+    ]
+  }
 ];
 
 export const tractionStats = [
