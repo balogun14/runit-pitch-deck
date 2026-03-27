@@ -22,8 +22,10 @@ export function renderMarket(): string {
       (r, i) => `
       <div class="whynow-card reveal delay-${i + 4}">
         <div class="whynow-icon">${r.icon}</div>
-        <h4 class="whynow-title">${r.title}</h4>
-        <p class="whynow-desc">${r.description}</p>
+        <div class="whynow-content">
+          <h4 class="whynow-title">${r.title}</h4>
+          <p class="whynow-desc">${r.description}</p>
+        </div>
       </div>`
     )
     .join("");
@@ -32,12 +34,12 @@ export function renderMarket(): string {
     .map(
       (p, i) => `
       <div class="whynow-card reveal delay-${i + 4}">
-        <div class="four-ps-icon">${p.icon}</div>
-        <div class="four-ps-content">
-          <h4 class="four-ps-title">${p.title}</h4>
-          ${p.description ? `<p class="four-ps-desc">${p.description}</p>` : ''}
+        <div class="whynow-icon">${p.icon}</div>
+        <div class="whynow-content">
+          <h4 class="whynow-title">${p.title}</h4>
+          ${p.description ? `<p class="whynow-desc">${p.description}</p>` : ''}
           ${p.bullets ? `
-            <ul class="four-ps-bullets">
+            <ul class="feature-bullets">
               ${p.bullets.map(b => `<li>${b}</li>`).join('')}
             </ul>
           ` : ''}

@@ -180,14 +180,27 @@
 
   .whynow-card {
     display: flex;
-    align-items: center;
-    gap: var(--space-md);
+    align-items: flex-start;
+    gap: 12px;
     padding: var(--space-md);
   }
 
-  .whynow-icon { margin-bottom: 0; flex-shrink: 0; }
-  .whynow-title { font-size: 0.88rem; }
-  .whynow-desc { font-size: 0.82rem; }
+  .whynow-icon { 
+    width: 38px;
+    height: 38px;
+    padding: 6px;
+    border-radius: 10px;
+    flex-shrink: 0;
+  }
+  
+  .whynow-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .whynow-title { font-size: 0.95rem; }
+  .whynow-desc { font-size: 0.85rem; }
+  .feature-bullets { font-size: 0.82rem; }
 
   /* ===== Traction ===== */
   .traction-band { padding: var(--space-md); margin-bottom: var(--space-md); }
