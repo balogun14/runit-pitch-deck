@@ -227,16 +227,28 @@
   .insight-desc { font-size: 0.82rem; }
 
   /* ===== Revenue ===== */
-  .revenue-table { font-size: 0.78rem; }
-  .revenue-table th { padding: 10px 10px; font-size: 0.65rem; }
-  .revenue-table td { padding: 12px 10px; }
+  .revenue-main-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
 
-  .revenue-badge { flex-direction: column; align-items: flex-start; }
-  .revenue-sub { font-size: 0.82rem; }
-  .min-fee-bar { flex-direction: column; align-items: flex-start; gap: var(--space-sm); padding: var(--space-md); }
-  .min-fee-value { font-size: 1.5rem; }
-  .min-fee-split { margin-left: 0; font-size: 0.78rem; }
-  .streams-grid { grid-template-columns: 1fr; }
+  .revenue-pillar {
+    padding: var(--space-lg);
+    border-radius: 16px;
+  }
+
+  .pillar-header h3 { font-size: 1.3rem; }
+  .pillar-desc { font-size: 0.85rem; }
+  .pillar-list li { font-size: 0.82rem; }
+
+  .revenue-footer {
+    flex-direction: column;
+    gap: var(--space-sm);
+    text-align: center;
+    background: transparent;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding-top: var(--space-md);
+  }
 
   /* ===== Competition ===== */
   /* Scroll hint for table */

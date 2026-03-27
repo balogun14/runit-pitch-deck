@@ -106,9 +106,9 @@ export function renderCanvas(): string {
             <span class="canvas-num">5</span>
           </div>
           <ul class="canvas-list">
-            <li>15&ndash;20% commission on completed tasks</li>
-            <li><strong>Future:</strong> Monthly subscription for free deliveries</li>
-            <li><strong>Future:</strong> Vendor advertising</li>
+            <li><strong>B2B Fulfillment:</strong> Task infrastructure for local vendors (10&ndash;30% commission, delivery &amp; priority fees)</li>
+            <li><strong>Subscription (Students):</strong> &#8358;2k&ndash;&#8358;5k/mo for free deliveries, faster service &amp; priority runners</li>
+            <li><strong>Transaction Fees:</strong> 15&ndash;20% commission on peer-to-peer tasks</li>
           </ul>
         </div>
       </div>

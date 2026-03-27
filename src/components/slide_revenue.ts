@@ -3,63 +3,57 @@ export function renderRevenue(): string {
   <section class="slide slide-revenue" data-slide="revenue">
     <div class="slide-inner">
       <span class="section-eyebrow section-eyebrow-dark reveal text-label">Business Model</span>
-      <h2 class="section-title reveal delay-1 text-white">Revenue &amp; Sustainability</h2>
+      <h2 class="section-title reveal delay-1 text-white">Revenue Strategy</h2>
 
-      <div class="revenue-badge reveal delay-1">
-        <span class="badge">Commission Model (25%)</span>
-        <span class="revenue-sub text-white">Platform fee on every successful transaction. 75% goes directly to student-runners.</span>
-      </div>
-
-      <div class="min-fee-bar reveal delay-2">
-        <span class="min-fee-label">Minimum Service Fee</span>
-        <span class="min-fee-value">\u20a6300</span>
-        <span class="min-fee-split">Our Revenue: <strong>\u20a675</strong> &middot; Runner Earns: <strong>\u20a6225</strong></span>
-      </div>
-
-      <div class="financials-grid reveal delay-3">
-        <div class="financial-card">
-          <div class="financial-card-header">
-            <h4>Unit Economics</h4>
+      <div class="revenue-main-grid reveal delay-2">
+        <!-- B2B Pillar -->
+        <div class="revenue-pillar b2b-pillar">
+          <div class="pillar-header">
+            <span class="stream-tag-new">B2B Fulfillment</span>
+            <h3>Vendor Partnerships</h3>
           </div>
-          <div class="financial-card-body">
-            <p>CAC: <strong>\u20a6200</strong></p>
-            <p>Revenue/User: <strong>\u20a6660/mo</strong></p>
-            <p>Payback: <strong>~9 days</strong></p>
-            <p class="cac-note-inline">Hybrid CAC: flyers + ambassadors + referrals. Dense campus networks = no paid ads at launch.</p>
+          <div class="pillar-body">
+            <p class="pillar-desc">Partner with local eateries, pharmacies, and supermarkets to become their <strong>delivery infrastructure</strong>.</p>
+            <ul class="pillar-list">
+              <li><strong>Commission:</strong> 10&ndash;30% per order</li>
+              <li><strong>Volume:</strong> Hundreds of orders/day vs individual requests</li>
+              <li><strong>Listing Fees:</strong> Priority positioning for local vendors</li>
+            </ul>
+            <div class="pillar-footer">
+              <span class="win-label">Why it wins:</span>
+              <p>Scalable volume &amp; high predictability.</p>
+            </div>
           </div>
         </div>
 
-        <div class="financial-card">
-          <div class="financial-card-header">
-            <h4>Growth Projection</h4>
+        <!-- Student Pillar -->
+        <div class="revenue-pillar sub-pillar">
+          <div class="pillar-header">
+            <span class="stream-tag-new">Stable Growth</span>
+            <h3>Subscription Model</h3>
           </div>
-          <div class="financial-card-body">
-            <p>Y1: 3,000 users &rarr; <strong>\u20a624M+</strong></p>
-            <p>Y3: 15,000 users &rarr; <strong>\u20a6120M+</strong></p>
-            <p>Y5: 60,000 users &rarr; <strong>\u20a6475M+</strong></p>
-          </div>
-        </div>
-
-        <div class="financial-card">
-          <div class="financial-card-header">
-            <h4>Break-even &amp; Cash Flow</h4>
-          </div>
-          <div class="financial-card-body">
-            <p>Break-even: <strong>~7,300 tasks</strong></p>
-            <p>~<strong>1,200 active users</strong></p>
-            <p>Cash flow positive <strong>Year 1</strong></p>
+          <div class="pillar-body">
+            <p class="pillar-desc">Stable student plans (&#8358;2k&ndash;&#8358;5k/mo) for those requiring frequent, high-priority assistance.</p>
+            <ul class="pillar-list">
+              <li><strong>Free Deliveries:</strong> Zero-cost delivery for subscribers</li>
+              <li><strong>Priority Runners:</strong> Faster matching &amp; handling</li>
+              <li><strong>Retention:</strong> Locked-in usage &amp; predictable cash flow</li>
+            </ul>
+            <div class="pillar-footer">
+              <span class="win-label">Why it's powerful:</span>
+              <p>Reduces CAC pressure &amp; increases retention.</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="future-row reveal delay-5">
-        <div class="future-item">
-          <span class="stream-tag">B2B</span>
-          <span>Vendor Partnerships &mdash; delivery infrastructure for campus vendors</span>
+      <!-- Transactional footnote -->
+      <div class="revenue-footer reveal delay-4">
+        <div class="footnote-item">
+          <strong>Transactional Commision:</strong> 15&ndash;20% platform fee on peer-to-peer student tasks.
         </div>
-        <div class="future-item">
-          <span class="stream-tag">SUB</span>
-          <span>Student Subscriptions &mdash; \u20a62K\u2013\u20a65K/mo for priority service</span>
+        <div class="footnote-item">
+          <strong>Unit Economics:</strong> Payback: <strong>~9 days</strong> &middot; Cash flow positive: <strong>Year 1</strong>
         </div>
       </div>
     </div>

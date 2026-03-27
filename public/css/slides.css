@@ -509,95 +509,110 @@
   background: radial-gradient(ellipse at 70% 80%, var(--purple-900) 0%, var(--purple-950) 60%, #080415 100%);
 }
 
-.revenue-badge {
+.revenue-main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  margin-top: var(--space-xl);
+}
+
+.revenue-pillar {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: var(--space-xl);
   display: flex;
-  align-items: center;
-  gap: var(--space-md);
-  flex-wrap: wrap;
-  margin-bottom: var(--space-xl);
+  flex-direction: column;
+  transition: all 0.4s var(--ease-out-quart);
 }
 
-.revenue-sub { font-size: 0.9rem; color: var(--ink-on-purple-dim); font-weight: 300; }
-
-.revenue-table-wrap {
-  margin-bottom: var(--space-xl);
-  overflow-x: auto;
-  border-radius: var(--radius-md);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+.revenue-pillar:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
-.revenue-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.88rem;
-}
-
-.revenue-table th {
+.stream-tag-new {
   font-family: var(--font-mono);
-  font-size: 0.74rem;
-  letter-spacing: 0.06em;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--purple-300);
-  text-align: left;
-  padding: 14px 18px;
-  background: rgba(255, 255, 255, 0.03);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(109, 63, 212, 0.15);
+  padding: 4px 10px;
+  border-radius: 100px;
+  margin-bottom: var(--space-md);
+  display: inline-block;
 }
 
-.revenue-table td {
-  padding: 16px 18px;
-  color: var(--ink-on-purple);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-  font-weight: 400;
-}
-
-.revenue-table td.text-purple { color: var(--purple-300); font-weight: 600; }
-
-.revenue-table tbody tr {
-  transition: background 0.2s;
-}
-
-.revenue-table tbody tr:hover { background: rgba(255, 255, 255, 0.03); }
-
-.unit-economics {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-lg);
-  margin-bottom: var(--space-xl);
-}
-
-.unit-metric {
-  text-align: center;
-  padding: var(--space-xl);
-  background: rgba(255, 255, 255, 0.04);
-  border-radius: var(--radius-lg);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  transition: background 0.3s, transform 0.3s var(--ease-out-quart);
-}
-
-.unit-metric:hover {
-  background: rgba(255, 255, 255, 0.07);
-  transform: translateY(-3px);
-}
-
-.unit-metric-value {
+.pillar-header h3 {
   font-family: var(--font-display);
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: var(--purple-300);
-  margin-bottom: 6px;
+  font-size: 1.6rem;
+  margin-bottom: var(--space-md);
+  color: #fff;
 }
 
-.unit-metric-label {
-  font-size: 0.88rem;
-  font-weight: 600;
+.pillar-desc {
+  font-size: 0.95rem;
+  color: var(--ink-on-purple-dim);
+  margin-bottom: var(--space-lg);
+  line-height: 1.5;
+}
+
+.pillar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-xl) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.pillar-list li {
+  font-size: 0.9rem;
+  padding-left: 20px;
+  position: relative;
   color: var(--ink-on-purple);
-  margin-bottom: 4px;
 }
 
-.unit-metric-desc { font-size: 0.82rem; color: var(--ink-on-purple-dim); }
+.pillar-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--purple-400);
+}
 
-.future-streams h4 { margin-bottom: var(--space-md); font-size: 1rem; }
+.pillar-footer {
+  margin-top: auto;
+  padding-top: var(--space-lg);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.win-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.revenue-footer {
+  margin-top: var(--space-2xl);
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-xl);
+  padding: var(--space-lg);
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 16px;
+  font-size: 0.85rem;
+  color: var(--ink-on-purple-dim);
+}
+
+.revenue-footer strong { color: var(--purple-300); }
 
 .streams-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); }
 
