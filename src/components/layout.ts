@@ -21,8 +21,8 @@ export function renderAllSlides(): string {
     renderRevenue(),
     renderCompetition(),
     renderTeam(),
-    renderCanvas(),
     renderAsk(),
+    renderCanvas(),
   ].join("\n");
 }
 

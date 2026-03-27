@@ -43,14 +43,15 @@
   }
 
   .slide {
+    height: auto;
     min-height: auto;
     scroll-snap-align: start;
   }
 
   /* Hero stays viewport-height since it fits */
   .slide-hero {
-    min-height: 100vh;
-    min-height: 100dvh;
+    height: 100vh;
+    height: 100dvh;
   }
 
   .slide-inner {

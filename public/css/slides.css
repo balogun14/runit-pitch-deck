@@ -6,9 +6,9 @@
 .hero-layout {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  gap: var(--space-3xl);
+  gap: var(--space-xl);
   align-items: center;
-  min-height: 80vh;
+  min-height: 70vh;
 }
 
 .hero-badge { margin-bottom: var(--space-xl); }
@@ -64,14 +64,14 @@
 }
 
 .slide-problem .section-title {
-  margin-bottom: var(--space-2xl);
+  margin-bottom: var(--space-lg);
 }
 
 .problem-grid {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  gap: var(--space-2xl);
-  margin-top: var(--space-lg);
+  gap: var(--space-xl);
+  margin-top: var(--space-md);
   align-items: start;
 }
 
@@ -232,11 +232,13 @@
 .product-layout {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: var(--space-3xl);
+  gap: var(--space-xl);
   align-items: center;
 }
 
 .phone-frame-alt {
+  --phone-w: 260px;
+  --phone-h: 540px;
   box-shadow:
     var(--shadow-phone),
     0 0 100px rgba(0, 0, 0, 0.2);
@@ -287,14 +289,14 @@
 .market-metrics {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-xl);
-  margin-bottom: var(--space-3xl);
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
 }
 
 .market-card {
   background: var(--surface-card);
   border-radius: var(--radius-xl);
-  padding: var(--space-2xl) var(--space-xl);
+  padding: var(--space-xl) var(--space-lg);
   text-align: center;
   box-shadow: var(--shadow-card);
   border: 1px solid rgba(109, 63, 212, 0.06);
@@ -320,11 +322,11 @@
 
 .market-number {
   font-family: var(--font-display);
-  font-size: clamp(2.8rem, 5vw, 3.8rem);
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
   font-weight: 700;
   color: var(--purple-600);
   line-height: 1;
-  margin-bottom: var(--space-sm);
+  margin-bottom: 4px;
 }
 
 .market-label {
@@ -457,8 +459,8 @@
 
 .traction-band {
   border-radius: var(--radius-lg);
-  padding: var(--space-xl) var(--space-2xl);
-  margin-bottom: var(--space-lg);
+  padding: var(--space-lg) var(--space-xl);
+  margin-bottom: var(--space-md);
 }
 
 .traction-band-data {
@@ -472,7 +474,7 @@
 }
 
 .traction-band-label {
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-md);
   color: var(--purple-600);
 }
 
@@ -521,8 +523,8 @@
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 24px;
-  padding: var(--space-xl);
+  border-radius: 20px;
+  padding: var(--space-lg);
   display: flex;
   flex-direction: column;
   transition: all 0.4s var(--ease-out-quart);
@@ -565,10 +567,10 @@
 .pillar-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 var(--space-xl) 0;
+  margin: 0 0 var(--space-lg) 0;
   display: flex;
   flex-direction: column;
-  gap: var(--space-md);
+  gap: var(--space-sm);
 }
 
 .pillar-list li {
@@ -601,11 +603,11 @@
 }
 
 .revenue-footer {
-  margin-top: var(--space-2xl);
+  margin-top: var(--space-xl);
   display: flex;
   justify-content: space-between;
-  gap: var(--space-xl);
-  padding: var(--space-lg);
+  gap: var(--space-lg);
+  padding: var(--space-md);
   background: rgba(255, 255, 255, 0.02);
   border-radius: 16px;
   font-size: 0.85rem;
@@ -647,7 +649,7 @@
 .slide-competition { background: var(--surface); }
 
 .comp-table-wrap {
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-lg);
   overflow-x: auto;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
@@ -701,7 +703,7 @@
 .advantage-card {
   background: var(--surface-card);
   border-radius: var(--radius-lg);
-  padding: var(--space-xl) var(--space-lg);
+  padding: var(--space-lg) var(--space-md);
   box-shadow: var(--shadow-sm);
   border: 1px solid rgba(109, 63, 212, 0.06);
   text-align: center;
@@ -740,8 +742,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: var(--space-xl);
-  margin-top: var(--space-2xl);
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
 }
 
 .team-member {
@@ -755,9 +757,9 @@
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 20px;
-  padding: var(--space-lg) var(--space-md);
-  width: 190px;
-  min-height: 290px;
+  padding: var(--space-md);
+  width: 180px;
+  min-height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -778,8 +780,8 @@
 }
 
 .team-photo {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
@@ -876,8 +878,8 @@
 .donuts-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-lg);
-  margin-bottom: var(--space-2xl);
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
 }
 
 .donut-card { text-align: center; }
@@ -903,7 +905,7 @@
   line-height: 1.45;
 }
 
-.milestones-section { margin-top: var(--space-xl); }
+.milestones-section { margin-top: var(--space-lg); }
 
 .milestones-heading { font-size: 1.15rem; margin-bottom: var(--space-lg); font-weight: 600; }
 
@@ -943,12 +945,12 @@
   border-radius: var(--radius-lg);
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.06);
-  margin-top: var(--space-lg);
+  margin-top: var(--space-md);
 }
 
 .canvas-cell {
   background: rgba(15, 7, 32, 0.85);
-  padding: var(--space-lg);
+  padding: var(--space-md);
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
@@ -1057,7 +1059,7 @@
 .deck-logo:hover { opacity: 1; }
 
 .deck-logo-img {
-  height: 120px;
+  height: 80px;
   width: auto;
   display: block;
 }
@@ -1439,7 +1441,7 @@
 .survey-charts-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space-2xl);
+  gap: var(--space-lg);
 }
 
 .survey-chart { text-align: center; }

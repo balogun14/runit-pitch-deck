@@ -39,23 +39,27 @@ a { color: inherit; text-decoration: none; }
 }
 
 .slide {
-  min-height: 100vh;
-  min-height: 100dvh;
+  height: 100vh;
+  height: 100dvh;
   scroll-snap-align: start;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .slide-inner {
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
-  padding: var(--space-3xl) var(--space-xl);
+  padding: var(--space-xl) var(--space-xl) var(--space-2xl);
   position: relative;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Noise Texture — subtle analog warmth */
