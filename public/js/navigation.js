@@ -8,7 +8,7 @@
   const slideNames = [
     'Cover', 'Problem', 'How It Works', 'Product',
     'Market', 'Traction', 'Revenue', 'Competition',
-    'Team', 'The Ask', 'Canvas'
+    'Team', 'Canvas', 'The Ask'
   ];
 
   let currentSlide = 0;

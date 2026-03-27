@@ -778,17 +778,18 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
+  border-top: 2px solid transparent;
 }
 
-.canvas-partners       { grid-area: partners; }
-.canvas-activities     { grid-area: activities; }
-.canvas-value          { grid-area: value; }
-.canvas-relationships  { grid-area: relationships; }
-.canvas-segments       { grid-area: segments; }
-.canvas-resources      { grid-area: resources; }
-.canvas-channels       { grid-area: channels; }
-.canvas-costs          { grid-area: costs; }
-.canvas-revenue-streams { grid-area: revenue; }
+.canvas-partners       { grid-area: partners; border-top-color: var(--purple-400); }
+.canvas-activities     { grid-area: activities; border-top-color: var(--purple-500); }
+.canvas-value          { grid-area: value; border-top-color: var(--green); }
+.canvas-relationships  { grid-area: relationships; border-top-color: var(--amber); }
+.canvas-segments       { grid-area: segments; border-top-color: var(--red); }
+.canvas-resources      { grid-area: resources; border-top-color: var(--purple-300); }
+.canvas-channels       { grid-area: channels; border-top-color: var(--green-dim); }
+.canvas-costs          { grid-area: costs; border-top-color: var(--red); }
+.canvas-revenue-streams { grid-area: revenue; border-top-color: var(--green); }
 
 .canvas-header {
   display: flex;
@@ -858,26 +859,31 @@
   background: var(--purple-500);
 }
 
-/* Subtle accent borders for the value prop (center) */
+/* Accent for value prop (center) */
 .canvas-value {
-  background: rgba(109, 63, 212, 0.08);
+  background: rgba(16, 185, 129, 0.06);
+  border-top-width: 3px;
 }
+
+/* Tinted backgrounds per section */
+.canvas-costs { background: rgba(244, 63, 94, 0.04); }
+.canvas-revenue-streams { background: rgba(16, 185, 129, 0.04); }
 
 /* ===== LOGO ===== */
 .deck-logo {
   position: fixed;
-  top: 24px;
-  left: 28px;
+  bottom: 24px;
+  right: 28px;
   z-index: 10001;
   pointer-events: auto;
-  opacity: 0.8;
+  opacity: 0.7;
   transition: filter 0.5s var(--ease-smooth), opacity 0.3s;
 }
 
 .deck-logo:hover { opacity: 1; }
 
 .deck-logo-img {
-  height: 24px;
+  height: 120px;
   width: auto;
   display: block;
 }
