@@ -8,7 +8,7 @@
   const slideNames = [
     'Cover', 'Problem', 'How It Works', 'Product',
     'Market', 'Traction', 'Revenue', 'Competition',
-    'Team', 'The Ask'
+    'Team', 'The Ask', 'Canvas'
   ];
 
   let currentSlide = 0;
@@ -72,6 +72,14 @@
 
     // Trigger slide animations
     slides[idx].classList.add('slide-active');
+
+    // Toggle logo color for dark/light slides
+    const darkSlides = ['hero', 'product', 'revenue', 'team', 'ask', 'canvas'];
+    const slideName = slides[idx].dataset.slide;
+    const logo = document.querySelector('.deck-logo');
+    if (logo) {
+      logo.classList.toggle('deck-logo--light', darkSlides.includes(slideName));
+    }
 
     // Hide keyboard hint after first navigation
     const hint = document.querySelector('.keyboard-hint');

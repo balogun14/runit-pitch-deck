@@ -1,4 +1,14 @@
-import { tractionStats, tractionInsights } from "../modules/data";
+import { tractionStats, surveyCharts } from "../modules/data";
+
+function buildConicGradient(slices: { percentage: number; color: string }[]): string {
+  let accumulated = 0;
+  const stops = slices.map(s => {
+    const start = accumulated;
+    accumulated += s.percentage * 3.6;
+    return `${s.color} ${start}deg ${accumulated}deg`;
+  });
+  return `conic-gradient(${stops.join(', ')})`;
+}
 
 export function renderTraction(): string {
   const statsHtml = tractionStats
@@ -21,13 +31,23 @@ export function renderTraction(): string {
     )
     .join("");
 
-  const insightsHtml = tractionInsights
+  const chartsHtml = surveyCharts
     .map(
-      (ins, i) => `
-      <div class="traction-insight reveal delay-${i + 4}">
-        <h4 class="insight-title">${ins.title}</h4>
-        <p class="insight-desc">${ins.description}</p>
-      </div>`
+      (chart, ci) => `
+    <div class="survey-chart reveal delay-${ci + 6}">
+      <div class="pie-chart" style="background: ${buildConicGradient(chart.slices)};"></div>
+      <h4 class="pie-title">${chart.title}</h4>
+      <p class="pie-subtitle">${chart.subtitle}</p>
+      <div class="pie-legend">
+        ${chart.slices.filter((_, i) => chart.slices.length <= 5 || i < 5).map(s => `
+          <div class="pie-legend-item">
+            <span class="pie-legend-dot" style="background: ${s.color};"></span>
+            <span class="pie-legend-label">${s.label}</span>
+            <span class="pie-legend-pct">${s.percentage}%</span>
+          </div>
+        `).join("")}
+      </div>
+    </div>`
     )
     .join("");
 
@@ -44,10 +64,10 @@ export function renderTraction(): string {
         </div>
       </div>
 
-      <div class="traction-band traction-band-insights reveal delay-3">
-        <div class="traction-band-label text-label">The Insights: Key Learnings</div>
-        <div class="traction-insights">
-          ${insightsHtml}
+      <div class="traction-band traction-band-survey reveal delay-3">
+        <div class="traction-band-label text-label">The Evidence: Survey Feedback (n=38)</div>
+        <div class="survey-charts-grid">
+          ${chartsHtml}
         </div>
       </div>
     </div>

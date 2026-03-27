@@ -1,4 +1,4 @@
-import { comparisonData, unfairAdvantages } from "../modules/data";
+import { comparisonData, unfairAdvantages, swotAnalysis } from "../modules/data";
 
 function statusIcon(status: "good" | "bad" | "warn"): string {
   if (status === "good")
@@ -32,6 +32,16 @@ export function renderCompetition(): string {
     )
     .join("");
 
+  const swotHtml = swotAnalysis
+    .map(
+      (s, i) => `
+      <div class="swot-compact reveal delay-${i + 7}" style="border-left-color: ${s.color};">
+        <strong class="swot-compact-title">${s.category}</strong>
+        <span class="swot-compact-points">${s.points.join(" ")}</span>
+      </div>`
+    )
+    .join("");
+
   return `
   <section class="slide slide-competition" data-slide="competition">
     <div class="slide-inner">
@@ -57,6 +67,10 @@ export function renderCompetition(): string {
       <h3 class="advantages-heading reveal delay-2 text-center">Our Unfair Advantages</h3>
       <div class="advantages-grid">
         ${advantagesHtml}
+      </div>
+
+      <div class="swot-compact-grid">
+        ${swotHtml}
       </div>
     </div>
   </section>`;

@@ -48,6 +48,11 @@ export function renderAsk(): string {
           ${milestonesHtml}
         </div>
       </div>
+
+      <div class="qr-section reveal delay-7">
+        <img src="/public/images/qr-code.jpeg" alt="Scan to try the RunIt MVP" class="qr-image" loading="lazy" />
+        <p class="qr-caption text-label">Scan to Try the MVP</p>
+      </div>
     </div>
   </section>`;
 }

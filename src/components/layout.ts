@@ -8,6 +8,7 @@ import { renderRevenue } from "./slide_revenue";
 import { renderCompetition } from "./slide_competition";
 import { renderTeam } from "./slide_team";
 import { renderAsk } from "./slide_ask";
+import { renderCanvas } from "./slide_canvas";
 
 export function renderAllSlides(): string {
   return [
@@ -21,6 +22,7 @@ export function renderAllSlides(): string {
     renderCompetition(),
     renderTeam(),
     renderAsk(),
+    renderCanvas(),
   ].join("\n");
 }
 
@@ -38,6 +40,10 @@ export function renderPage(): string {
 <body>
   <div class="progress-bar" id="progressBar"></div>
 
+  <a href="/" class="deck-logo" aria-label="RunIt">
+    <img src="/public/images/logo.png" alt="RunIt" class="deck-logo-img" />
+  </a>
+
   <div class="noise-overlay" aria-hidden="true">
     <svg><filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" /></filter><rect width="100%" height="100%" filter="url(#noiseFilter)" /></svg>
   </div>
@@ -51,7 +57,7 @@ export function renderPage(): string {
   <div class="slide-counter" id="slideCounter">
     <span class="slide-counter-current">1</span>
     <span class="slide-counter-sep">/</span>
-    <span class="slide-counter-total">10</span>
+    <span class="slide-counter-total">11</span>
   </div>
 
   <main class="deck" id="deck">

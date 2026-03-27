@@ -29,6 +29,9 @@
 
   .advantages-grid { grid-template-columns: repeat(2, 1fr); }
   .donuts-grid { grid-template-columns: repeat(2, 1fr); }
+  .swot-compact-grid { grid-template-columns: 1fr; }
+  .financials-grid { grid-template-columns: 1fr 1fr; }
+  .streams-grid { grid-template-columns: 1fr; }
 }
 
 /* Mobile */
@@ -169,23 +172,6 @@
   .product-feature { font-size: 0.88rem; }
 
   /* ===== Market ===== */
-  /* Horizontal row of 3 compact metrics instead of stacked cards */
-  .market-metrics {
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-sm);
-    margin-bottom: var(--space-xl);
-  }
-
-  .market-card {
-    padding: var(--space-md) var(--space-sm);
-    border-radius: var(--radius-md);
-  }
-
-  .market-card::after { display: none; }
-  .market-number { font-size: 1.8rem; }
-  .market-label { font-size: 0.72rem; }
-  .market-desc { display: none; } /* descriptions are too long for 3-col mobile */
-
   .whynow-section { margin-top: var(--space-md); }
   .whynow-heading { font-size: 1rem; margin-bottom: var(--space-md); }
   .whynow-grid { grid-template-columns: 1fr; gap: var(--space-sm); }
@@ -229,24 +215,12 @@
   .revenue-table th { padding: 10px 10px; font-size: 0.65rem; }
   .revenue-table td { padding: 12px 10px; }
 
-  /* Horizontal row of 3 unit metrics */
-  .unit-economics {
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-sm);
-  }
-
-  .unit-metric {
-    padding: var(--space-md) var(--space-sm);
-  }
-
-  .unit-metric-value { font-size: 1.4rem; }
-  .unit-metric-label { font-size: 0.72rem; }
-  .unit-metric-desc { display: none; }
-
-  .stream-item {
-    padding: 10px 14px;
-    font-size: 0.82rem;
-  }
+  .revenue-badge { flex-direction: column; align-items: flex-start; }
+  .revenue-sub { font-size: 0.82rem; }
+  .min-fee-bar { flex-direction: column; align-items: flex-start; gap: var(--space-sm); padding: var(--space-md); }
+  .min-fee-value { font-size: 1.5rem; }
+  .min-fee-split { margin-left: 0; font-size: 0.78rem; }
+  .streams-grid { grid-template-columns: 1fr; }
 
   /* ===== Competition ===== */
   /* Scroll hint for table */
@@ -321,6 +295,62 @@
 
   .slide-ask .section-title { font-size: 1.5rem; }
 
+  /* ===== Vision & Mission ===== */
+  .vm-bar { flex-direction: column; }
+  .vm-bar-divider { width: 100%; height: 1px; }
+  .vm-bar-item { padding: var(--space-md); }
+
+  /* ===== Market Funnel ===== */
+  .funnel-step {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    padding: var(--space-md);
+    max-width: 100% !important;
+  }
+  .funnel-highlight { font-size: 1.3rem; }
+  .funnel-connector { height: 14px; }
+  .projection-cards { flex-direction: column; align-items: center; gap: var(--space-sm); }
+  .projection-card { width: 100%; max-width: 280px; }
+  .projection-amount { font-size: 1.3rem; }
+
+  /* ===== Revenue Financials ===== */
+  .financials-grid { grid-template-columns: 1fr; }
+  .financial-card { padding: var(--space-md); }
+  .streams-grid { flex-direction: column; }
+  .stream-card { padding: var(--space-md); }
+  .cac-note { font-size: 0.78rem; padding: var(--space-md); }
+
+  /* ===== SWOT ===== */
+  .swot-compact-grid { grid-template-columns: 1fr; }
+
+  .future-row { flex-direction: column; }
+
+  /* ===== Survey Charts ===== */
+  .survey-charts-grid { grid-template-columns: 1fr; gap: var(--space-xl); }
+  .pie-chart { width: 130px; height: 130px; }
+  .pie-legend-item { font-size: 0.72rem; }
+
+  /* ===== QR Code ===== */
+  .qr-image { width: 110px; height: 110px; }
+  .qr-section { margin-top: var(--space-lg); }
+
+  /* ===== Logo ===== */
+  .deck-logo { top: 12px; left: 16px; }
+  .deck-logo-img { height: 18px; }
+
+  /* ===== Canvas ===== */
+  .canvas-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-top: var(--space-md);
+  }
+
+  .canvas-cell { padding: var(--space-md); }
+  .canvas-title { font-size: 0.75rem; }
+  .canvas-body p, .canvas-list li { font-size: 0.78rem; }
+
   /* ===== Global mobile ===== */
   .blob-1 { width: 350px; height: 350px; }
   .blob-2 { width: 280px; height: 280px; }
@@ -339,16 +369,8 @@
 
   .hero-title { font-size: 2.8rem; }
 
-  .market-metrics { grid-template-columns: 1fr; }
-  .market-desc { display: block; }
-  .market-number { font-size: 2.4rem; }
-  .market-label { font-size: 0.85rem; }
-
   .traction-stats { grid-template-columns: 1fr; }
   .traction-stat-desc { display: block; }
-
-  .unit-economics { grid-template-columns: 1fr; }
-  .unit-metric-desc { display: block; }
 
   .donuts-grid { grid-template-columns: 1fr; }
   .donut { width: 110px; height: 110px; }

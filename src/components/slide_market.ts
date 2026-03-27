@@ -1,15 +1,20 @@
-import { marketMetrics, whyNowReasons } from "../modules/data";
+import { marketFunnel, whyNowReasons } from "../modules/data";
 
 export function renderMarket(): string {
-  const metricsHtml = marketMetrics
-    .map(
-      (m, i) => `
-      <div class="market-card reveal-scale delay-${i + 1}">
-        <div class="market-number counter" data-target="${m.numericValue}" data-suffix="${m.suffix}">0</div>
-        <h4 class="market-label">${m.label}</h4>
-        <p class="market-desc">${m.description}</p>
-      </div>`
-    )
+  const funnelHtml = marketFunnel
+    .map((step, i) => `
+    <div class="funnel-step reveal delay-${i + 1}" style="max-width: ${100 - i * 8}%;">
+      <div class="funnel-step-left">
+        <span class="funnel-tier">${step.tier}</span>
+        <div>
+          <h4 class="funnel-headline">${step.headline}</h4>
+          <p class="funnel-detail">${step.detail}</p>
+        </div>
+      </div>
+      <div class="funnel-highlight">${step.highlight}</div>
+    </div>
+    ${i < marketFunnel.length - 1 ? '<div class="funnel-connector" aria-hidden="true"></div>' : ''}
+  `)
     .join("");
 
   const reasonsHtml = whyNowReasons
@@ -30,10 +35,9 @@ export function renderMarket(): string {
       <h2 class="section-title reveal delay-1 text-center">From Campus to Continent</h2>
       <p class="section-subtitle reveal delay-2 text-center">A scalable, multi-billion-naira opportunity</p>
 
-      <div class="market-metrics">
-        ${metricsHtml}
+      <div class="market-funnel">
+        ${funnelHtml}
       </div>
-
       <div class="whynow-section">
         <h3 class="whynow-heading reveal delay-3 text-center">Why Now? The Perfect Storm of 2026</h3>
         <div class="whynow-grid">
