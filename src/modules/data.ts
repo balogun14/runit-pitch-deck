@@ -75,30 +75,6 @@ export const processSteps: ProcessStep[] = [
   },
 ];
 
-export const marketMetrics: Metric[] = [
-  {
-    value: "3K+",
-    numericValue: 3000,
-    suffix: "K+",
-    label: "CMUL Students",
-    description: "Initial launch ecosystem at College of Medicine, University of Lagos",
-  },
-  {
-    value: "2.7M+",
-    numericValue: 2700000,
-    suffix: "M+",
-    label: "Nigerian Students",
-    description: "Currently enrolled in tertiary institutions nationwide",
-  },
-  {
-    value: "9M+",
-    numericValue: 9000000,
-    suffix: "M+",
-    label: "Sub-Saharan Africa",
-    description: "Students in education or training by 2026",
-  },
-];
-
 export const whyNowReasons = [
   {
     title: "Digital Native Shift",
@@ -133,12 +109,6 @@ export const revenueTable = [
   { type: "Small (Food/Pharmacy)", fee: "\u20A6300", revenue: "\u20A675", runner: "\u20A6225" },
   { type: "Medium (Grocery/Heavy)", fee: "\u20A6350", revenue: "\u20A687.50", runner: "\u20A6262.50" },
   { type: "Complex/Multi-Stop", fee: "\u20A6500+", revenue: "\u20A6125+", runner: "\u20A6375+" },
-];
-
-export const unitEconomics: Metric[] = [
-  { value: "\u20A6450", numericValue: 450, suffix: "", label: "Customer Acquisition Cost", description: "Flyers + campus ambassadors" },
-  { value: "6", numericValue: 6, suffix: "", label: "Monthly Frequency", description: "Runs per user (~1.5 per week)" },
-  { value: "<1", numericValue: 1, suffix: "", label: "Payback Period", description: "Month for CAC recovery" },
 ];
 
 export const comparisonData: ComparisonRow[] = [
@@ -231,4 +201,92 @@ export const milestones = [
   "5,000 transactions processed",
   "Full UNILAG ecosystem rollout",
   "Expansion to 3-5 additional campuses",
+];
+
+// Vision & Mission
+export const visionText = "To become Africa's most trusted peer-to-peer logistics platform.";
+export const missionText = "To simplify everyday errands through a fast, affordable, and reliable runner network.";
+
+// Market Funnel (replaces marketMetrics)
+export const marketFunnel = [
+  {
+    tier: "TAM",
+    headline: "Total Addressable Market",
+    detail: "2.7M tertiary students × ₦400 avg task × 6 tasks/month",
+    highlight: "₦6.48B/month",
+  },
+  {
+    tier: "SOM",
+    headline: "Target Adoption",
+    detail: "10% initial market penetration",
+    highlight: "270,000 users",
+  },
+  {
+    tier: "UNIT",
+    headline: "Revenue Per User",
+    detail: "15–25% commission (₦60–₦100/task) × 6 tasks/month",
+    highlight: "₦360–₦600/mo",
+  },
+];
+
+export const revenueProjections = [
+  { scenario: "Conservative (15%)", amount: "₦97.2M", period: "/month" },
+  { scenario: "Optimistic (25%)", amount: "₦162M", period: "/month" },
+];
+
+// SWOT
+export const swotAnalysis = [
+  {
+    category: "Strengths",
+    color: "var(--green)",
+    points: ["Low capital model.", "Strong campus network."],
+    icon: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>`,
+  },
+  {
+    category: "Weaknesses",
+    color: "var(--amber)",
+    points: ["Initial trust barrier.", "Runner dependency."],
+    icon: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>`,
+  },
+  {
+    category: "Opportunities",
+    color: "var(--purple-500)",
+    points: ["Expansion to cities.", "Partnerships (cafeterias, stores)."],
+    icon: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`,
+  },
+  {
+    category: "Threats",
+    color: "var(--red)",
+    points: ["Large logistics entrants.", "Fraud risks."],
+    icon: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>`,
+  },
+];
+
+// Survey Charts
+export const surveyCharts = [
+  {
+    title: "Runner Readiness",
+    subtitle: "How ready are you to Run-it?",
+    sampleSize: 38,
+    slices: [
+      { label: "Interested, tell me more", percentage: 60.5, color: "#f43f5e" },
+      { label: "Already tying my sneakers!", percentage: 39.5, color: "#8b5cf6" },
+    ],
+  },
+  {
+    title: "Academic Coverage",
+    subtitle: "Current academic profile",
+    sampleSize: 38,
+    slices: [
+      { label: "Radiography", percentage: 21.1, color: "#8b5cf6" },
+      { label: "Pharmacy", percentage: 18.4, color: "#f43f5e" },
+      { label: "Medicine", percentage: 15.8, color: "#6d3fd4" },
+      { label: "MLS", percentage: 15.8, color: "#10b981" },
+      { label: "Physiology", percentage: 13.2, color: "#f59e0b" },
+      { label: "Physiotherapy", percentage: 7.9, color: "#c4b5fd" },
+      { label: "Nursing", percentage: 5.3, color: "#a78bfa" },
+      { label: "Dentistry", percentage: 1.5, color: "#3b2d5c" },
+      { label: "Pharmacology", percentage: 1.0, color: "#ddd6fe" },
+    ],
+  },
 ];

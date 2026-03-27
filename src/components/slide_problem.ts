@@ -1,4 +1,4 @@
-import { problemText, solutionText } from "../modules/data";
+import { problemText, solutionText, visionText, missionText } from "../modules/data";
 
 export function renderProblem(): string {
   return `
@@ -28,6 +28,18 @@ export function renderProblem(): string {
             <span class="tag tag-green">Digital Escrow</span>
             <span class="tag tag-green">Geofenced</span>
           </div>
+        </div>
+      </div>
+
+      <div class="vm-bar reveal delay-3">
+        <div class="vm-bar-item">
+          <span class="vm-bar-label">Vision</span>
+          <span class="vm-bar-text">${visionText}</span>
+        </div>
+        <div class="vm-bar-divider" aria-hidden="true"></div>
+        <div class="vm-bar-item">
+          <span class="vm-bar-label">Mission</span>
+          <span class="vm-bar-text">${missionText}</span>
         </div>
       </div>
     </div>
