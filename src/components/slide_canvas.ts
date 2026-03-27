@@ -71,7 +71,7 @@ export function renderCanvas(): string {
           </div>
           <ul class="canvas-list">
             <li><strong>Human:</strong> Founding team, campus ops leads, ambassadors</li>
-            <li><strong>Digital:</strong> FastAPI, React PWA, PostgreSQL, Paystack, Agora</li>
+            <li><strong>Digital:</strong> Golang, React PWA, PostgreSQL, Paystack, LiveKit</li>
             <li><strong>Financial:</strong> Seed capital, grants, payout float</li>
             <li><strong>Brand:</strong> &ldquo;Run-It Standard&rdquo; &amp; proprietary SOPs</li>
           </ul>
