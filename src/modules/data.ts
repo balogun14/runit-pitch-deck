@@ -48,8 +48,17 @@ export const unitEconomics = {
   coreRev: "₦45",
   blendedRev: "12",
   payback: "~1–2 Months",
-  subscriptionSavings: "30–50%"
+  subscriptionSavings: "30–50%",
+  arpu: "₦622/mo"
 };
+
+export const fiveYearProjections = [
+  { year: 1, users: "5,000",   revenue: "40.35M",  cacCost: "2.72M",   netProfit: "37.64M",  revNum: 40.35 },
+  { year: 2, users: "25,000",  revenue: "201.75M", cacCost: "13.58M",  netProfit: "188.18M", revNum: 201.75 },
+  { year: 3, users: "70,000",  revenue: "564.90M", cacCost: "38.01M",  netProfit: "526.89M", revNum: 564.9 },
+  { year: 4, users: "120,000", revenue: "968.40M", cacCost: "65.16M",  netProfit: "903.24M", revNum: 968.4 },
+  { year: 5, users: "200,000", revenue: "1.614B",  cacCost: "108.60M", netProfit: "1.505B",  revNum: 1614 },
+];
 
 export const tagline = `Campus Life Meets Convenience`;
 export const subtitle = `Don't Stress It. Just Run-It.`;
