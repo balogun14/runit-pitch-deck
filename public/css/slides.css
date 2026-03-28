@@ -108,18 +108,45 @@
 }
 
 .solution-heading::before {
-  content: '';
-  width: 4px;
-  height: 20px;
-  background: var(--green);
-  border-radius: 2px;
-  flex-shrink: 0;
+  display: none;
 }
 
+.problem-header-group {
+  margin-bottom: var(--space-lg);
+}
+
+.header-pre {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--purple-400);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
+}
+
+.header-icon {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.problem-heading, .solution-heading {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.problem-heading::before { display: none; }
+
 .problem-text {
-  margin-bottom: var(--space-xl);
-  line-height: 1.85;
-  font-size: 0.95rem;
+  margin-bottom: var(--space-lg);
+  line-height: 1.55;
+  font-size: 0.98rem;
+  color: var(--ink-dim);
+  white-space: pre-line;
 }
 
 .problem-tags { display: flex; flex-wrap: wrap; gap: var(--space-sm); }
@@ -587,10 +614,8 @@
 .stats-group { flex: 1; display: flex; flex-direction: column; gap: 4px; }
 .stats-label { font-family: var(--font-mono); font-size: 0.58rem; font-weight: 700; color: var(--purple-400); text-transform: uppercase; letter-spacing: 0.05em; }
 .stats-row { display: flex; gap: 12px; font-size: 0.78rem; color: var(--ink-on-purple-dim); }
+
 .stats-row strong { color: white; }
-.stats-row span { white-space: nowrap; }
-
-
 /* ===== SLIDE 8: COMPETITION ===== */
 .slide-competition { background: var(--surface); }
 

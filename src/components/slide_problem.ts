@@ -5,24 +5,36 @@ export function renderProblem(): string {
   <section class="slide slide-problem" data-slide="problem">
     <div class="slide-inner">
       <span class="section-eyebrow section-eyebrow-block reveal text-label text-center">The Challenge</span>
-      <h2 class="section-title reveal delay-1 text-center">The Variable Cost Dilemma</h2>
+      <h2 class="section-title reveal delay-1 text-center">Unreliable Logistics, Real Stakes</h2>
 
       <div class="problem-grid">
+        <!-- THE PROBLEM -->
         <div class="problem-col reveal-left delay-2">
-          <h3 class="problem-heading">The Problem</h3>
-          <p class="problem-text">${problemText}</p>
+          <div class="problem-header-group">
+            <span class="header-pre">The Struggle</span>
+            <h3 class="problem-heading">
+              WhatsApp Chaos
+            </h3>
+          </div>
+          <div class="problem-text">${problemText}</div>
           <div class="problem-tags">
             <span class="tag tag-red">Unreliable</span>
             <span class="tag tag-red">Fragmented</span>
-            <span class="tag tag-red">Price-gouged</span>
+            <span class="tag tag-red">Price-gouging</span>
           </div>
         </div>
 
         <div class="problem-divider draw-line" aria-hidden="true"></div>
 
+        <!-- THE SOLUTION -->
         <div class="problem-col reveal-right delay-2">
-          <h3 class="solution-heading">Our Solution</h3>
-          <p class="problem-text">${solutionText}</p>
+          <div class="problem-header-group">
+            <span class="header-pre">Our Answer</span>
+            <h3 class="solution-heading">
+              RunIt 
+            </h3>
+          </div>
+          <div class="problem-text">${solutionText}</div>
           <div class="problem-tags">
             <span class="tag tag-green">Reverse-bidding</span>
             <span class="tag tag-green">Digital Escrow</span>

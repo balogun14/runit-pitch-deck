@@ -43,13 +43,21 @@ export interface Metric {
   description: string;
 }
 
-export const tagline = "Campus Life Meets Convenience";
-export const subtitle = "Don't Stress It. Just Run-It.";
-export const svcgRef = "University of Lagos (UNILAG) | S-VCG Application Ref: SVC-2025-000J6I";
+export const tagline = `Campus Life Meets Convenience`;
+export const subtitle = `Don't Stress It. Just Run-It.`;
+export const svcgRef = `University of Lagos (UNILAG) | S-VCG Application Ref: SVC-2025-000J6I`;
 
-export const problemText = "Time-starved university students balancing heavy academic loads face chaotic, fragmented campus logistics with unreliable informal solutions and severe price-gouging.";
+export const problemText = `It’s 2:00 PM. A student, exhausted after hours in a compounding lab, is desperate for lunch before a 4:00 PM exam. 
 
-export const solutionText = "An inDrive-style reverse-bidding PWA with secure Digital Escrow and Geofenced Two-Step Market Flow that eliminates fraud and wasted journeys.";
+With no time for the chaotic 45-minute cafeteria queue, they turn to a fragmented WhatsApp group. An hour passes. The guy finally shows up right before the test demanding double the fee because "the sun is too hot." 
+
+That is severe price-gouging, and the student pays it because they are out of options. Current campus logistics are chaotic, predatory, and broken.`;
+
+export const solutionText = `RunIt replaces that chaos with a structured, transparent peer-to-peer logistics platform. 
+
+Using an inDrive-style reverse-bidding system, runners compete for tasks at fair prices, ensuring affordability for students. Our Digital Escrow ensures trust: funds are only released after a two-step verification. 
+
+By geofencing the entire operation to the campus, we eliminate fraud and waste, turning every student into a micro-entrepreneur in a secure, digital ecosystem.`;
 
 export const processSteps: ProcessStep[] = [
   {
@@ -288,8 +296,8 @@ export const milestones = [
 ];
 
 // Vision & Mission
-export const visionText = "To become Africa's most trusted peer-to-peer logistics platform.";
-export const missionText = "To simplify everyday errands through a fast, affordable, and reliable runner network.";
+export const visionText = `To become Africa's most trusted peer-to-peer logistics platform.`;
+export const missionText = `To simplify everyday errands through a fast, affordable, and reliable runner network.`;
 
 // Market Funnel (replaces marketMetrics)
 export const marketFunnel = [
