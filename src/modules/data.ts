@@ -44,7 +44,7 @@ export interface Metric {
 }
 
 export const unitEconomics = {
-  cac: "₦543",
+  cacCost: "₦543",
   coreRev: "₦45",
   blendedRev: "12",
   payback: "~1–2 Months",
@@ -276,6 +276,13 @@ export const team: TeamMember[] = [
     photo: "/public/images/team/faith.jpg",
     skills: ["Legal Counsel", "LL.M", "Corporate & Intellectual Property Lawyer", "Startup & Business Law Advisor"]
   },
+  {
+    name: "Martins Wohu-Owo",
+    role: "Creative Director",
+    initials: "MW",
+    photo: "/public/images/team/martins.jpeg",
+    skills: ["Creative Direction", "Brand Identity", "User Acquisition"]
+  }
 
 
 ];

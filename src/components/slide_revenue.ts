@@ -55,7 +55,8 @@ export function renderRevenue(): string {
         <div class="rtb-item">
           <span class="rtb-label">Minimum Fee</span>
           <span class="rtb-value">\u20a6300</span>
-          <span class="rtb-detail">Platform (Core): <strong>${unitEconomics.coreRev}</strong> | Total (Blended): <strong>${unitEconomics.blendedRev}</strong></span>
+          <span class="rtb-detail">Platform (Core): <strong>${unitEconomics.coreRev}</strong> | Total (Orders): <strong>${unitEconomics.blendedRev}</strong></span>
+          <span class="rtb-detail">CAC: <strong>${unitEconomics.cacCost}</strong></span>
         </div>
       </div>
 
