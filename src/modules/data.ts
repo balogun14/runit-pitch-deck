@@ -267,7 +267,7 @@ export const team: TeamMember[] = [
     role: "CFO",
     initials: "OD",
     photo: "/public/images/team/dezzi.jpeg",
-    skills: ["Financial Models", "Risk Analysis", "Governance"]
+    skills: ["Financial Models", "Risk Analysis", "Governance", "MTN Finalist 2022"]
   },
     {
     name: "Faith Dolapo, OBIDIYA",
