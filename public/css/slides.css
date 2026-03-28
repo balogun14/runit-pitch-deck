@@ -621,7 +621,7 @@
   width: 100%;
   margin-top: 0;
   overflow: hidden;
-  max-height: 400px;
+  max-height: 380px;
 }
 
 .fp-header {
@@ -649,7 +649,7 @@
   display: grid;
   grid-template-columns: 1fr 1.4fr;
   gap: var(--space-md);
-  align-items: start;
+  align-items: stretch;
   max-height: 320px;
 }
 
@@ -719,8 +719,10 @@
 .fp-table-wrap {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
+  border-radius: 12px;
   overflow: hidden;
+  height: 300px;
+  max-height: 300px;
 }
 
 .fp-table {
@@ -742,8 +744,8 @@
 }
 
 .fp-table td {
-  padding: 7px 12px;
-  font-size: 0.8rem;
+  padding: 14px 14px;
+  font-size: 0.82rem;
   color: var(--ink-on-purple);
   border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
