@@ -75,7 +75,7 @@ export function renderRevenue(): string {
           <span class="stats-label">Unit Economics</span>
           <div class="stats-row">
             <span>CAC: <strong>${unitEconomics.cac}</strong></span>
-            <span>Rev/Order: <strong>${unitEconomics.blendedRev}</strong></span>
+            <span>Orders to break even: <strong>${unitEconomics.blendedRev}</strong></span>
             <span>Payback: <strong>${unitEconomics.payback}</strong></span>
           </div>
         </div>

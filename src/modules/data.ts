@@ -44,9 +44,9 @@ export interface Metric {
 }
 
 export const unitEconomics = {
-  cac: "₦714",
+  cac: "₦543",
   coreRev: "₦45",
-  blendedRev: "₦60–₦100",
+  blendedRev: "12",
   payback: "~1–2 Months",
   subscriptionSavings: "30–50%"
 };
