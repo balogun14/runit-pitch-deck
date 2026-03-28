@@ -80,11 +80,11 @@ export function renderRevenue(): string {
           </div>
         </div>
         <div class="stats-group">
-          <span class="stats-label">Growth (Users)</span>
+          <span class="stats-label">Growth Projection</span>
           <div class="stats-row">
-            <span>Y1: <strong>3K</strong></span>
-            <span>Y3: <strong>15K</strong></span>
-            <span>Y5: <strong>60K</strong></span>
+            <span>Y1: <strong>3000 users</strong>:₦24M+</span>
+            <span>Y3: <strong>15,000 users</strong>:₦120M+</span>
+            <span>Y5: <strong>60,0000 users</strong>:₦475M+</span>
           </div>
         </div>
         <div class="stats-group">
