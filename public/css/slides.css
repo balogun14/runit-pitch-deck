@@ -614,14 +614,35 @@
 .stats-label { font-family: var(--font-mono); font-size: 0.58rem; font-weight: 700; color: var(--purple-400); text-transform: uppercase; letter-spacing: 0.05em; }
 .stats-row { display: flex; gap: 12px; font-size: 0.78rem; color: var(--ink-on-purple-dim); }
 
-.stats-row strong { color: white; }
+/* Integrated Logic Footer */
+.rev-logic-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.02);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 8px 16px;
+  margin-top: 10px;
+  border-radius: 0 0 12px 12px;
+}
+
+.logic-unit { display: flex; align-items: center; gap: 12px; }
+.lu-tag { 
+  font-family: var(--font-mono); font-size: 0.5rem; font-weight: 700; 
+  color: var(--purple-400); border: 1px solid rgba(139, 92, 246, 0.3);
+  padding: 1px 6px; border-radius: 4px; letter-spacing: 0.05em;
+}
+.lu-text { font-size: 0.68rem; color: white; font-style: italic; }
+.lu-list { display: flex; gap: 12px; }
+.lu-list span { font-size: 0.68rem; color: white; opacity: 0.8; }
+.lu-list span::before { content: "•"; margin-right: 4px; color: var(--purple-400); }
 
 /* === 5-Year Financial Projection === */
 .fp-section {
   width: 100%;
   margin-top: 0;
   overflow: hidden;
-  max-height: 380px;
+  max-height: 420px;
 }
 
 .fp-header {

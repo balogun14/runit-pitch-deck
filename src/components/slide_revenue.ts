@@ -170,6 +170,25 @@ export function renderRevenue(): string {
             </table>
           </div>
         </div>
+
+        <!-- REVENUE LOGIC & ASSUMPTIONS (Integrated Footer) -->
+        <div class="rev-logic-footer">
+          <div class="logic-unit">
+             <span class="lu-tag">CALCULATION</span>
+             <span class="lu-text">Net Profit = Total Revenue &minus; Total CAC Cost</span>
+          </div>
+          <div class="logic-unit">
+             <span class="lu-tag">METRICS</span>
+             <div class="lu-list">
+                <span>60% Active</span>
+                <span>15 Orders/mo</span>
+                <span>₦350 Fee</span>
+                <span>₦52.5 Profit/Order</span>
+                <span>20% Subs Rate</span>
+                <span>₦1k Sub Fee</span>
+             </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>`;
