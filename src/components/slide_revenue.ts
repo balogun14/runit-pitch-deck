@@ -90,7 +90,6 @@ export function renderRevenue(): string {
           <p class="pillar-desc">Stable, predictable income through student membership tiers.</p>
           <ul class="pillar-list">
             <li>₦1,000 \u2013 ₦2,000 / month</li>
-            <li class="li-highlight">Save <strong>${unitEconomics.subscriptionSavings}</strong> on deliveries</li>
             <li>Priority runners &amp; faster response</li>
             <li>Access to exclusive discounts</li>
             <li>Schedule deliveries in advance</li>

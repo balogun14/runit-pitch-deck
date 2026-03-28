@@ -48,7 +48,6 @@ export const unitEconomics = {
   coreRev: "₦45",
   blendedRev: "12",
   payback: "~1–2 Months",
-  subscriptionSavings: "30–50%",
   arpu: "₦622/mo"
 };
 
