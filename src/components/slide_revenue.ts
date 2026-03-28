@@ -1,3 +1,5 @@
+import { unitEconomics } from "../modules/data";
+
 export function renderRevenue(): string {
   return `
   <section class="slide slide-revenue" data-slide="revenue">
@@ -16,7 +18,7 @@ export function renderRevenue(): string {
         <div class="rtb-item">
           <span class="rtb-label">Minimum Fee</span>
           <span class="rtb-value">\u20a6300</span>
-          <span class="rtb-detail">Runner: \u20a6255 | Platform: \u20a645</span>
+          <span class="rtb-detail">Platform (Core): <strong>${unitEconomics.coreRev}</strong> | Total (Blended): <strong>${unitEconomics.blendedRev}</strong></span>
         </div>
       </div>
 
@@ -53,7 +55,7 @@ export function renderRevenue(): string {
           <p class="pillar-desc">Stable, predictable income through student membership tiers.</p>
           <ul class="pillar-list">
             <li>₦2,000 \u2013 ₦5,000 / month</li>
-            <li>Free or discounted unlimited deliveries</li>
+            <li class="li-highlight">Save <strong>${unitEconomics.subscriptionSavings}</strong> on deliveries</li>
             <li>Priority runners &amp; faster response</li>
           </ul>
           <div class="pillar-footer">
@@ -72,9 +74,9 @@ export function renderRevenue(): string {
         <div class="stats-group">
           <span class="stats-label">Unit Economics</span>
           <div class="stats-row">
-            <span>CAC: <strong>\u20a6714</strong></span>
-            <span>Rev/Order: <strong>\u20a645</strong></span>
-            <span>Payback: <strong>~16 Orders</strong></span>
+            <span>CAC: <strong>${unitEconomics.cac}</strong></span>
+            <span>Rev/Order: <strong>${unitEconomics.blendedRev}</strong></span>
+            <span>Payback: <strong>${unitEconomics.payback}</strong></span>
           </div>
         </div>
         <div class="stats-group">
@@ -86,10 +88,9 @@ export function renderRevenue(): string {
           </div>
         </div>
         <div class="stats-group">
-          <span class="stats-label">Sustainability</span>
+          <span class="stats-label">Monetization Layers</span>
           <div class="stats-row">
-            <span>Break-even: <strong>~1,200 Active Users</strong></span>
-            <span>Cash Flow+: <strong>Year 1</strong></span>
+            <span class="text-xs text-ink-dim">Demand Control + Multi-Layer Monetization Layering (B2B, Ads, Subscriptions)</span>
           </div>
         </div>
       </div>

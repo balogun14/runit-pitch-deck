@@ -5,13 +5,15 @@
   "scripts": {
     "dev": "bun run --watch index.ts",
     "start": "bun run index.ts",
-    "build": "bun run build.ts"
+    "build": "bun run build.ts",
+    "export-pptx": "bun run scripts/export_pptx.ts"
   },
   "dependencies": {
     "htmx.org": "^2.0.8"
   },
   "devDependencies": {
     "@types/bun": "latest",
+    "pptxgenjs": "^4.0.1",
     "typescript": "^5"
   }
 }

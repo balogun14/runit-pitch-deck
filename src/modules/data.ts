@@ -43,6 +43,14 @@ export interface Metric {
   description: string;
 }
 
+export const unitEconomics = {
+  cac: "₦714",
+  coreRev: "₦45",
+  blendedRev: "₦60–₦100",
+  payback: "~1–2 Months",
+  subscriptionSavings: "30–50%"
+};
+
 export const tagline = `Campus Life Meets Convenience`;
 export const subtitle = `Don't Stress It. Just Run-It.`;
 export const svcgRef = `University of Lagos (UNILAG) | S-VCG Application Ref: SVC-2025-000J6I`;
