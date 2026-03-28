@@ -196,55 +196,57 @@ export const unfairAdvantages = [
 ];
 
 export const team: TeamMember[] = [
-  { 
-    name: "Ekundayo David", 
-    role: "CEO", 
-    initials: "ED", 
+  {
+    name: "Ekundayo David",
+    role: "CEO",
+    initials: "ED",
     photo: "/public/images/team/david.jpeg",
     skills: ["Business Strategy", "Partnerships", "Growth"]
   },
-  { 
-    name: "Balogun Muhammed-Awwal", 
-    role: "CTO", 
-    initials: "BM", 
+  {
+    name: "Balogun Muhammed-Awwal",
+    role: "CTO",
+    initials: "BM",
     photo: "/public/images/team/balogun.jpeg",
     skills: ["9+ Yrs Software Engineering", "System Architecture", "Technical Lead"]
   },
-  { 
-    name: "Arifalo Rufus", 
-    role: "CMO", 
-    initials: "AR", 
-    photo: "/public/images/team/rufus.jpeg",
-    skills: ["Growth Marketing", "Brand Identity", "User Acquisition"]
-  },
-  { 
-    name: "Obidiya Erioluwanmi", 
-    role: "COO", 
-    initials: "OE", 
-    photo: "/public/images/team/Eri.jpeg",
-    skills: ["Operations", "Logistics", "Community Mgmt"]
-  },
-  { 
-    name: "Okerafor Destiny", 
-    role: "CFO", 
-    initials: "OD", 
-    photo: "/public/images/team/dezzi.jpeg",
-    skills: ["Financial Models", "Risk Analysis", "Governance"]
-  },
   {
     name: "Ogunmola Helen",
-    role: "Financial Lead",
+    role: "Financial Analyst",
     initials: "OH",
     photo: "/public/images/team/helen.jpeg",
     skills: ["Financial Reporting & Analysis", "Data Analyst"]
   },
   {
+    name: "Arifalo Rufus",
+    role: "CMO",
+    initials: "AR",
+    photo: "/public/images/team/rufus.jpeg",
+    skills: ["Growth Marketing", "Brand Identity", "User Acquisition"]
+  },
+  {
     name: "Marvelous Olubo",
-    role: "Marketing Lead",
+    role: "Marketing Analyst",
     initials: "MO",
     photo: "/public/images/team/marvelous.jpeg",
     skills: ["Brand Storyteller", "Event and Red Carpet Host", "COO, Medicpreneur"]
-  }
+  },
+  {
+    name: "Obidiya Erioluwanmi",
+    role: "COO",
+    initials: "OE",
+    photo: "/public/images/team/Eri.jpeg",
+    skills: ["Operations", "Logistics", "Community Mgmt"]
+  },
+  {
+    name: "Okerafor Destiny",
+    role: "CFO",
+    initials: "OD",
+    photo: "/public/images/team/dezzi.jpeg",
+    skills: ["Financial Models", "Risk Analysis", "Governance"]
+  },
+
+
 ];
 
 export const fundAllocations: FundAllocation[] = [
