@@ -261,6 +261,13 @@ export const team: TeamMember[] = [
     photo: "/public/images/team/dezzi.jpeg",
     skills: ["Financial Models", "Risk Analysis", "Governance"]
   },
+    {
+    name: "Faith Dolapo, OBIDIYA",
+    role: "Legal Counsel",
+    initials: "FD",
+    photo: "/public/images/team/faith.jpg",
+    skills: ["Legal Counsel", "LL.M", "Corporate & Intellectual Property Lawyer", "Startup & Business Law Advisor"]
+  },
 
 
 ];
