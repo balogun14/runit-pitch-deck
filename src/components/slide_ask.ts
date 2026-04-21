@@ -33,7 +33,7 @@ export function renderAsk(): string {
   <section class="slide slide-ask" data-slide="ask">
     <div class="slide-inner text-center">
       <span class="section-eyebrow section-eyebrow-dark reveal text-label">The Ask</span>
-      <h2 class="section-title reveal delay-1 text-white">\u20A650,000,000 Grant Allocation</h2>
+      <h2 class="section-title reveal delay-1 text-white">\u20A615,000,000 Allocation</h2>
       <p class="section-subtitle section-subtitle-dark reveal delay-2">
         Non-equity grant to build a scalable student support &amp; employment platform
       </p>

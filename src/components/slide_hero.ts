@@ -7,7 +7,7 @@ export function renderHero(): string {
     <div class="slide-inner hero-layout">
       <div class="hero-content">
         <div class="hero-badge reveal">
-          <span class="text-label">S-VCG Pitch Deck 2025</span>
+          <span class="text-label">Pitch Deck 2026</span>
         </div>
         <h1 class="hero-title reveal delay-1">
           <span class="title-slam" aria-label="RUN-IT"><span class="slam-letter" style="--i:0">R</span><span class="slam-letter" style="--i:1">U</span><span class="slam-letter" style="--i:2">N</span><span class="slam-letter slam-hyphen" style="--i:3">-</span><span class="slam-letter" style="--i:4">I</span><span class="slam-letter" style="--i:5">T</span></span>

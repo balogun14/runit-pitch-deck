@@ -61,7 +61,7 @@ export const fiveYearProjections = [
 
 export const tagline = `Campus Life Meets Convenience`;
 export const subtitle = `Don't Stress It. Just Run-It.`;
-export const svcgRef = `University of Lagos (UNILAG) | S-VCG Application Ref: SVC-2025-000J6I`;
+export const svcgRef = `RC: 9067081`;
 
 export const problemText = `It’s 2:00 PM. A student, exhausted after hours in a compounding lab, is desperate for lunch before a 4:00 PM exam. 
 
@@ -69,11 +69,12 @@ With no time for the chaotic 45-minute cafeteria queue, they turn to a fragmente
 
 That is severe price-gouging, and the student pays it because they are out of options. Current campus logistics are chaotic, predatory, and broken.`;
 
-export const solutionText = `RunIt replaces that chaos with a structured, transparent peer-to-peer logistics platform. 
+export const solutionText = `Run-IT replaces that exhaustion with a high-velocity system of Optimization.
+By stripping away the guesswork of informal groups and replacing them with an inDrive-style reverse-bidding engine, we deliver absolute Convenience. You no longer beg for a favor; you delegate a task to a verified peer who is already on that route, ensuring your lunch arrives in 15 minutes, not 60.
 
-Using an inDrive-style reverse-bidding system, runners compete for tasks at fair prices, ensuring affordability for students. Our Digital Escrow ensures trust: funds are only released after a two-step verification. 
+Our geofenced digital escrow doesn't just stop the gouging—it professionalizes the student hustle into a secure, scalable model for Income Generation. We turn every walk to a lecture into a business opportunity, allowing 'Runners' to monetize their movement while their peers finally buy back the time they need to succeed.
 
-By geofencing the entire operation to the campus, we eliminate fraud and waste, turning every student into a micro-entrepreneur in a secure, digital ecosystem.`;
+In the Run-IT ecosystem, we don't just move packages; we move the barriers to your academic success.`;
 
 export const processSteps: ProcessStep[] = [
   {
@@ -156,9 +157,11 @@ export const fourPs: FourPInfo[] = [
 ];
 
 export const tractionStats = [
-  { value: "100%", numericValue: 100, suffix: "%", label: "Runner Readiness", description: "Interest in participating as Founding Runners" },
-  { value: "~100", numericValue: 100, suffix: "", prefix: "~", label: "Early Client Interest", description: "Students willing to use RunIt during pilot" },
-  { value: "1:3", numericValue: 3, suffix: "", label: "Supply-to-Demand", description: "Ensuring high runner utilization" },
+  { value: "120+", numericValue: 120, suffix: "+", prefix: "", label: "Active Users", description: "Students actively using the platform" },
+  { value: "100+", numericValue: 100, suffix: "+", prefix: "", label: "Paying Customers", description: "Active task requesters" },
+  { value: "₦15K+", numericValue: 15, suffix: "K+", prefix: "₦", label: "Revenue Generated", description: "Revenue from early pilot phase" },
+  { value: "MVP", numericValue: 1, suffix: "", prefix: "", label: "Working Application", description: "Fully functional PWA" },
+  { value: "6", numericValue: 5, suffix: "", prefix: "", label: "Core Team", description: "Dedicated staff driving growth" }
 ];
 
 export const tractionInsights = [
@@ -234,13 +237,13 @@ export const team: TeamMember[] = [
     photo: "/public/images/team/balogun.jpeg",
     skills: ["9+ Yrs Software Engineering", "System Architecture", "Technical Lead"]
   },
-  {
-    name: "Ogunmola Helen",
-    role: "Financial Analyst",
-    initials: "OH",
-    photo: "/public/images/team/helen.jpeg",
-    skills: ["Financial Reporting & Analysis", "Data Analyst"]
-  },
+  // {
+  //   name: "Ogunmola Helen",
+  //   role: "Financial Analyst",
+  //   initials: "OH",
+  //   photo: "/public/images/team/helen.jpeg",
+  //   skills: ["Financial Reporting & Analysis", "Data Analyst"]
+  // },
   {
     name: "Arifalo Rufus",
     role: "CMO",
@@ -248,13 +251,13 @@ export const team: TeamMember[] = [
     photo: "/public/images/team/rufus.jpeg",
     skills: ["Growth Marketing", "Brand Identity", "User Acquisition"]
   },
-  {
-    name: "Marvelous Olubo",
-    role: "Marketing Analyst",
-    initials: "MO",
-    photo: "/public/images/team/marvelous.jpeg",
-    skills: ["Brand Storyteller", "Event and Red Carpet Host", "COO, Medicpreneur"]
-  },
+  // {
+  //   name: "Marvelous Olubo",
+  //   role: "Marketing Analyst",
+  //   initials: "MO",
+  //   photo: "/public/images/team/marvelous.jpeg",
+  //   skills: ["Brand Storyteller", "Event and Red Carpet Host", "COO, Medicpreneur"]
+  // },
   {
     name: "Obidiya Erioluwanmi",
     role: "COO",
@@ -263,26 +266,26 @@ export const team: TeamMember[] = [
     skills: ["Operations", "Logistics", "Community Mgmt"]
   },
   {
-    name: "Okerafor Destiny",
+    name: "Okereafor Destiny",
     role: "CFO",
     initials: "OD",
     photo: "/public/images/team/dezzi.jpeg",
     skills: ["Financial Models", "Risk Analysis", "Governance", "MTN Finalist 2022"]
   },
-    {
-    name: "Faith Dolapo, OBIDIYA",
-    role: "Legal Counsel",
-    initials: "FD",
-    photo: "/public/images/team/faith.jpg",
-    skills: ["Legal Counsel", "LL.M", "Corporate & Intellectual Property Lawyer", "Startup & Business Law Advisor"]
-  },
-  {
-    name: "Martins Wohu-Owo",
-    role: "Creative Director",
-    initials: "MW",
-    photo: "/public/images/team/martins.jpeg",
-    skills: ["Creative Direction", "Brand Identity", "User Acquisition"]
-  }
+  //   {
+  //   name: "Faith Dolapo, OBIDIYA",
+  //   role: "Legal Counsel",
+  //   initials: "FD",
+  //   photo: "/public/images/team/faith.jpg",
+  //   skills: ["Legal Counsel", "LL.M", "Corporate & Intellectual Property Lawyer", "Startup & Business Law Advisor"]
+  // },
+  // {
+  //   name: "Martins Wohu-Owo",
+  //   role: "Creative Director",
+  //   initials: "MW",
+  //   photo: "/public/images/team/martins.jpeg",
+  //   skills: ["Creative Direction", "Brand Identity", "User Acquisition"]
+  // }
 
 
 ];
@@ -291,28 +294,28 @@ export const fundAllocations: FundAllocation[] = [
   {
     category: "Product & Digital Infrastructure",
     percentage: 28,
-    amount: "\u20A614,000,000",
+    amount: "₦4,200,000",
     description: "MVP scaling, wallet system, backend security, native apps",
     color: "var(--purple-600)",
   },
   {
     category: "Marketing & Campus Activation",
     percentage: 32,
-    amount: "\u20A616,000,000",
+    amount: "₦4,800,000",
     description: "Activation across 12 universities, student influencers",
     color: "var(--purple-500)",
   },
   {
     category: "Pilot & Operations",
     percentage: 30,
-    amount: "\u20A615,000,000",
+    amount: "₦4,500,000",
     description: "Beta deployment at 3-5 campuses, team stipends",
     color: "var(--purple-400)",
   },
   {
     category: "Contingency Reserve",
     percentage: 10,
-    amount: "\u20A66,000,000",
+    amount: "₦1,500,000",
     description: "Technical glitches, regulatory changes, rapid-response",
     color: "var(--purple-300)",
   },
@@ -326,8 +329,8 @@ export const milestones = [
 ];
 
 // Vision & Mission
-export const visionText = `To become Africa's most trusted peer-to-peer logistics platform.`;
-export const missionText = `To simplify everyday errands through a fast, affordable, and reliable runner network.`;
+export const visionText = `To become the definitive "Campus Operating System" for Africa. We envision a unified, continent-wide micro-economy where every student has the infrastructure to optimize their academic journey and unlock their full economic potential.`;
+export const missionText = `To build a scalable, campus-native infrastructure that standardizes logistics and student services across Africa. We aim to empower students by converting their daily movement and skills into structured earning opportunities while providing a seamless, peer-to-peer marketplace that buys back their time.`;
 
 // Market Funnel (replaces marketMetrics)
 export const marketFunnel = [
