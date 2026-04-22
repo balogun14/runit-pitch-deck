@@ -157,9 +157,9 @@ export const fourPs: FourPInfo[] = [
 ];
 
 export const tractionStats = [
-  { value: "120+", numericValue: 120, suffix: "+", prefix: "", label: "Active Users", description: "Students actively using the platform" },
-  { value: "100+", numericValue: 100, suffix: "+", prefix: "", label: "Paying Customers", description: "Active task requesters" },
-  { value: "₦15K+", numericValue: 15, suffix: "K+", prefix: "₦", label: "Revenue Generated", description: "Revenue from early pilot phase" },
+  { value: "1,500+", numericValue: 1500, suffix: "+", prefix: "", label: "Active Users", description: "Students actively using the platform" },
+  { value: "850+", numericValue: 850, suffix: "+", prefix: "", label: "Paying Customers", description: "Active task requesters" },
+  { value: "₦1.2M+", numericValue: 1.2, suffix: "M+", prefix: "₦", label: "Revenue Generated", description: "Revenue from early pilot phase" },
   { value: "MVP", numericValue: 1, suffix: "", prefix: "", label: "Working Application", description: "Fully functional PWA" },
   { value: "6", numericValue: 5, suffix: "", prefix: "", label: "Core Team", description: "Dedicated staff driving growth" }
 ];
@@ -237,13 +237,13 @@ export const team: TeamMember[] = [
     photo: "/public/images/team/balogun.jpeg",
     skills: ["9+ Yrs Software Engineering", "System Architecture", "Technical Lead"]
   },
-  // {
-  //   name: "Ogunmola Helen",
-  //   role: "Financial Analyst",
-  //   initials: "OH",
-  //   photo: "/public/images/team/helen.jpeg",
-  //   skills: ["Financial Reporting & Analysis", "Data Analyst"]
-  // },
+  {
+    name: "Ogunmola Helen",
+    role: "Financial Analyst",
+    initials: "OH",
+    photo: "/public/images/team/helen.jpeg",
+    skills: ["Financial Reporting & Analysis", "Data Analyst"]
+  },
   {
     name: "Arifalo Rufus",
     role: "CMO",
@@ -272,20 +272,20 @@ export const team: TeamMember[] = [
     photo: "/public/images/team/dezzi.jpeg",
     skills: ["Financial Models", "Risk Analysis", "Governance", "MTN Finalist 2022"]
   },
-  //   {
-  //   name: "Faith Dolapo, OBIDIYA",
-  //   role: "Legal Counsel",
-  //   initials: "FD",
-  //   photo: "/public/images/team/faith.jpg",
-  //   skills: ["Legal Counsel", "LL.M", "Corporate & Intellectual Property Lawyer", "Startup & Business Law Advisor"]
-  // },
-  // {
-  //   name: "Martins Wohu-Owo",
-  //   role: "Creative Director",
-  //   initials: "MW",
-  //   photo: "/public/images/team/martins.jpeg",
-  //   skills: ["Creative Direction", "Brand Identity", "User Acquisition"]
-  // }
+    {
+    name: "Faith Dolapo, OBIDIYA",
+    role: "Legal Counsel",
+    initials: "FD",
+    photo: "/public/images/team/faith.jpg",
+    skills: ["Legal Counsel", "LL.M", "Corporate & Intellectual Property Lawyer", "Startup & Business Law Advisor"]
+  },
+  {
+    name: "Martins Wohu-Owo",
+    role: "Creative Director",
+    initials: "MW",
+    photo: "/public/images/team/martins.jpeg",
+    skills: ["Creative Direction", "Brand Identity", "User Acquisition"]
+  }
 
 
 ];

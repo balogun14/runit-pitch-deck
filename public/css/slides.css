@@ -132,7 +132,7 @@
 }
 
 .problem-heading, .solution-heading {
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   font-weight: 800;
   margin-bottom: 0;
   display: flex;
@@ -142,9 +142,9 @@
 .problem-heading::before { display: none; }
 
 .problem-text {
-  margin-bottom: var(--space-lg);
-  line-height: 1.55;
-  font-size: 0.98rem;
+  margin-bottom: var(--space-md);
+  line-height: 1.45;
+  font-size: 0.85rem;
   color: var(--ink-dim);
   white-space: pre-line;
 }
@@ -1223,7 +1223,7 @@
   display: flex;
   align-items: stretch;
   gap: 0;
-  margin-top: var(--space-xl);
+  margin-top: var(--space-sm);
   background: var(--purple-50);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
