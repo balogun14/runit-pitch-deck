@@ -63,18 +63,17 @@ export const tagline = `Campus Life Meets Convenience`;
 export const subtitle = `Don't Stress It. Just Run-It.`;
 export const svcgRef = `RC: 9067081`;
 
-export const problemText = `It’s 2:00 PM. A student, exhausted after hours in a compounding lab, is desperate for lunch before a 4:00 PM exam. 
+export const problemText = `Campus logistics are chaotic and predatory. Students desperate for time rely on fragmented WhatsApp groups for everyday errands.
 
-With no time for the chaotic 45-minute cafeteria queue, they turn to a fragmented WhatsApp group. An hour passes. The guy finally shows up right before the test demanding double the fee because "the sun is too hot." 
+Often, runners arrive late and arbitrarily double their fees, exploiting the student's lack of alternatives. 
 
-That is severe price-gouging, and the student pays it because they are out of options. Current campus logistics are chaotic, predatory, and broken.`;
+This leaves students dealing with severe price-gouging, extreme unreliability, and wasted time.`;
 
-export const solutionText = `Run-IT replaces that exhaustion with a high-velocity system of Optimization.
-By stripping away the guesswork of informal groups and replacing them with an inDrive-style reverse-bidding engine, we deliver absolute Convenience. You no longer beg for a favor; you delegate a task to a verified peer who is already on that route, ensuring your lunch arrives in 15 minutes, not 60.
+export const solutionText = `Run-IT replaces this chaos with an inDrive-style reverse-bidding engine. You no longer beg for a favor—you delegate tasks to verified peers already on your route.
 
-Our geofenced digital escrow doesn't just stop the gouging—it professionalizes the student hustle into a secure, scalable model for Income Generation. We turn every walk to a lecture into a business opportunity, allowing 'Runners' to monetize their movement while their peers finally buy back the time they need to succeed.
+Our geofenced digital escrow eliminates price-gouging and professionalizes the student hustle. 'Runners' safely monetize their daily movement, while their peers buy back their time.
 
-In the Run-IT ecosystem, we don't just move packages; we move the barriers to your academic success.`;
+We don't just move packages; we remove barriers to academic success.`;
 
 export const processSteps: ProcessStep[] = [
   {
@@ -329,8 +328,8 @@ export const milestones = [
 ];
 
 // Vision & Mission
-export const visionText = `To become the definitive "Campus Operating System" for Africa. We envision a unified, continent-wide micro-economy where every student has the infrastructure to optimize their academic journey and unlock their full economic potential.`;
-export const missionText = `To build a scalable, campus-native infrastructure that standardizes logistics and student services across Africa. We aim to empower students by converting their daily movement and skills into structured earning opportunities while providing a seamless, peer-to-peer marketplace that buys back their time.`;
+export const visionText = `To become the definitive "Campus Operating System" for Africa—a unified micro-economy where every student can optimize their academic journey and unlock their economic potential.`;
+export const missionText = `To build a scalable, campus-native infrastructure that standardizes student logistics. We empower students by converting their daily movement into earning opportunities through a seamless, peer-to-peer marketplace.`;
 
 // Market Funnel (replaces marketMetrics)
 export const marketFunnel = [
