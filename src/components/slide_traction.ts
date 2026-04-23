@@ -58,7 +58,7 @@ export function renderTraction(): string {
       <h2 class="section-title reveal delay-1 text-center">Real Signals. Real Demand.</h2>
 
       <div class="traction-band traction-band-data reveal delay-1">
-        <div class="traction-band-label text-label">The Data: Survey Results</div>
+        <div class="traction-band-label text-label">The Data: Pilot Testing Results</div>
         <div class="traction-stats">
           ${statsHtml}
         </div>

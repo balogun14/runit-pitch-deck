@@ -156,11 +156,11 @@ export const fourPs: FourPInfo[] = [
 ];
 
 export const tractionStats = [
-  { value: "1,500+", numericValue: 1500, suffix: "+", prefix: "", label: "Active Users", description: "Students actively using the platform" },
-  { value: "850+", numericValue: 850, suffix: "+", prefix: "", label: "Paying Customers", description: "Active task requesters" },
-  { value: "₦1.2M+", numericValue: 1.2, suffix: "M+", prefix: "₦", label: "Revenue Generated", description: "Revenue from early pilot phase" },
-  { value: "MVP", numericValue: 1, suffix: "", prefix: "", label: "Working Application", description: "Fully functional PWA" },
-  { value: "6", numericValue: 5, suffix: "", prefix: "", label: "Core Team", description: "Dedicated staff driving growth" }
+  { value: "100+", numericValue: 100, suffix: "+", prefix: "", label: "Beta Users", description: "Registered students during pilot" },
+  { value: "35", numericValue: 35, suffix: "", prefix: "", label: "Verified Runners", description: "Active student service providers" },
+  { value: "10+", numericValue: 10, suffix: "+", prefix: "", label: "Transactions", description: "Successful test errands completed" },
+  { value: "MVP", numericValue: 1, suffix: "", prefix: "", label: "Working Application", description: "Fully functional PWA platform" },
+  { value: "6", numericValue: 6, suffix: "", prefix: "", label: "Core Team", description: "Dedicated student founders" }
 ];
 
 export const tractionInsights = [
