@@ -44,19 +44,23 @@ export interface Metric {
 }
 
 export const unitEconomics = {
-  cacCost: "₦543",
-  coreRev: "₦45",
-  blendedRev: "12",
-  payback: "~1–2 Months",
-  arpu: "₦622/mo"
+  cacCost: "\u20A61,333",
+  runnerCommission: "20%",
+  requesterFee: "5%",
+  avgRunnerFee: "\u20A6350",
+  avgItemCost: "\u20A62,000",
+  revenuePerOrder: "\u20A6170",
+  contributionPerOrder: "\u20A6140",
+  payback: "~10 orders",
+  arpu: "\u20A6708/mo"
 };
 
 export const fiveYearProjections = [
-  { year: 1, users: "5,000",   revenue: "40.35M",  cacCost: "2.72M",   netProfit: "37.64M",  revNum: 40.35 },
-  { year: 2, users: "25,000",  revenue: "201.75M", cacCost: "13.58M",  netProfit: "188.18M", revNum: 201.75 },
-  { year: 3, users: "70,000",  revenue: "564.90M", cacCost: "38.01M",  netProfit: "526.89M", revNum: 564.9 },
-  { year: 4, users: "120,000", revenue: "968.40M", cacCost: "65.16M",  netProfit: "903.24M", revNum: 968.4 },
-  { year: 5, users: "200,000", revenue: "1.614B",  cacCost: "108.60M", netProfit: "1.505B",  revNum: 1614 },
+  { year: 1, users: "5,000", active: "30%", orders: "75k", revenue: "12.75M", cacCost: "6.67M", variableCost: "2.25M", contribution: "3.83M", cacPerUser: "\u20A61,333", revNum: 12.75 },
+  { year: 2, users: "25,000", active: "35%", orders: "438k", revenue: "74.38M", cacCost: "22.50M", variableCost: "13.13M", contribution: "38.75M", cacPerUser: "\u20A6900", revNum: 74.38 },
+  { year: 3, users: "70,000", active: "40%", orders: "1.40M", revenue: "238.00M", cacCost: "49.00M", variableCost: "42.00M", contribution: "147.00M", cacPerUser: "\u20A6700", revNum: 238 },
+  { year: 4, users: "120,000", active: "42%", orders: "2.52M", revenue: "428.40M", cacCost: "72.00M", variableCost: "75.60M", contribution: "280.80M", cacPerUser: "\u20A6600", revNum: 428.4 },
+  { year: 5, users: "200,000", active: "45%", orders: "4.50M", revenue: "765.00M", cacCost: "108.60M", variableCost: "135.00M", contribution: "521.40M", cacPerUser: "\u20A6543", revNum: 765 },
 ];
 
 export const tagline = `Campus Life Meets Convenience`;
@@ -156,10 +160,10 @@ export const fourPs: FourPInfo[] = [
 ];
 
 export const tractionStats = [
-  { value: "100+", numericValue: 100, suffix: "+", prefix: "", label: "Beta Users", description: "Registered students during pilot" },
+  { value: "348+", numericValue: 348, suffix: "+", prefix: "", label: "Users", description: "Registered students after Launch" },
   { value: "35", numericValue: 35, suffix: "", prefix: "", label: "Verified Runners", description: "Active student service providers" },
-  { value: "10+", numericValue: 10, suffix: "+", prefix: "", label: "Transactions", description: "Successful test errands completed" },
-  { value: "MVP", numericValue: 1, suffix: "", prefix: "", label: "Working Application", description: "Fully functional PWA platform" },
+  { value: "39+", numericValue: 39, suffix: "+", prefix: "", label: "Transactions", description: "Successful tasks completed" },
+  { value: "MDP", numericValue: 1, suffix: "", prefix: "", label: "Working Application", description: "Fully functional PWA platform" },
   { value: "6", numericValue: 6, suffix: "", prefix: "", label: "Core Team", description: "Dedicated student founders" }
 ];
 
@@ -170,9 +174,9 @@ export const tractionInsights = [
 ];
 
 export const revenueTable = [
-  { type: "Small (Food/Pharmacy)", fee: "\u20A6300", revenue: "\u20A675", runner: "\u20A6225" },
-  { type: "Medium (Grocery/Heavy)", fee: "\u20A6350", revenue: "\u20A687.50", runner: "\u20A6262.50" },
-  { type: "Complex/Multi-Stop", fee: "\u20A6500+", revenue: "\u20A6125+", runner: "\u20A6375+" },
+  { type: "Small (Food/Pharmacy)", fee: "\u20A6300", itemCost: "\u20A61,000", revenue: "\u20A6110", runner: "\u20A6240" },
+  { type: "Average Campus Errand", fee: "\u20A6350", itemCost: "\u20A62,000", revenue: "\u20A6170", runner: "\u20A6280" },
+  { type: "Complex/Multi-Stop", fee: "\u20A6500+", itemCost: "\u20A63,000+", revenue: "\u20A6250+", runner: "\u20A6400+" },
 ];
 
 export const comparisonData: ComparisonRow[] = [
@@ -293,35 +297,35 @@ export const fundAllocations: FundAllocation[] = [
   {
     category: "Product & Digital Infrastructure",
     percentage: 28,
-    amount: "₦4,200,000",
+    amount: "\u20A614,000,000",
     description: "MVP scaling, wallet system, backend security, native apps",
     color: "var(--purple-600)",
   },
   {
     category: "Marketing & Campus Activation",
     percentage: 32,
-    amount: "₦4,800,000",
+    amount: "\u20A616,000,000",
     description: "Activation across 12 universities, student influencers",
     color: "var(--purple-500)",
   },
   {
     category: "Pilot & Operations",
     percentage: 30,
-    amount: "₦4,500,000",
+    amount: "\u20A615,000,000",
     description: "Beta deployment at 3-5 campuses, team stipends",
     color: "var(--purple-400)",
   },
   {
     category: "Contingency Reserve",
     percentage: 10,
-    amount: "₦1,500,000",
+    amount: "\u20A65,000,000",
     description: "Technical glitches, regulatory changes, rapid-response",
     color: "var(--purple-300)",
   },
 ];
 
 export const milestones = [
-  "2,000 active users on platform",
+  "5,000 users acquired in Year 1",
   "5,000 transactions processed",
   "Full UNILAG ecosystem rollout",
   "Expansion to 3-5 additional campuses",
@@ -336,8 +340,8 @@ export const marketFunnel = [
   {
     tier: "TAM",
     headline: "Total Addressable Market",
-    detail: "2.7M tertiary students × ₦400 avg task × 6 tasks/month",
-    highlight: "₦6.48B/month",
+    detail: "2.7M tertiary students x \u20A6170 revenue/order x 50 orders/year",
+    highlight: "\u20A61.91B/month",
   },
   {
     tier: "SOM",
@@ -348,14 +352,14 @@ export const marketFunnel = [
   {
     tier: "UNIT",
     headline: "Revenue Per User",
-    detail: "15–25% commission (₦60–₦100/task) × 6 tasks/month",
-    highlight: "₦360–₦600/mo",
+    detail: "20% runner commission + 5% item-cost fee; 50 annual orders",
+    highlight: "\u20A6708/mo",
   },
 ];
 
 export const revenueProjections = [
-  { scenario: "Conservative (15%)", amount: "₦97.2M", period: "/month" },
-  { scenario: "Optimistic (25%)", amount: "₦162M", period: "/month" },
+  { scenario: "Year 1 conservative mix", amount: "\u20A612.75M", period: "/year" },
+  { scenario: "Year 5 scaled campus mix", amount: "\u20A6765M", period: "/year" },
 ];
 
 // SWOT
@@ -375,7 +379,7 @@ export const swotAnalysis = [
   {
     category: "Opportunities",
     color: "var(--purple-500)",
-    points: ["Expansion to cities.", "Partnerships (cafeterias, stores)."],
+    points: ["Expansion to cities.", "Higher repeat usage across campuses."],
     icon: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`,
   },
   {

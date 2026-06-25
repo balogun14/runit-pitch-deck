@@ -12,8 +12,8 @@ export function renderCanvas(): string {
             <span class="canvas-num">7</span>
           </div>
           <ul class="canvas-list">
-            <li><strong>Authorities:</strong> Student Affairs, Campus Security, Student Union</li>
-            <li><strong>Vendors:</strong> Campus eateries, print shops, hostel porters</li>
+            <li><strong>Institutional:</strong> Student Affairs, Campus Security, Student Union</li>
+            <li><strong>Community:</strong> Class reps, hostel leads, campus ambassadors</li>
             <li><strong>Tech/Fin:</strong> Paystack, AWS/Railway, Agora</li>
           </ul>
         </div>
@@ -95,7 +95,7 @@ export function renderCanvas(): string {
             <span class="canvas-num">9</span>
           </div>
           <ul class="canvas-list">
-            <li><strong>Variable:</strong> App optimization, runner incentives, ambassador stipends, marketing</li>
+            <li><strong>Variable:</strong> Payment fees, dispute handling, runner incentives, ambassador stipends</li>
             <li><strong>Fixed:</strong> Cloud hosting, API fees (maps, SMS), payment gateway reserves</li>
           </ul>
         </div>
@@ -106,9 +106,9 @@ export function renderCanvas(): string {
             <span class="canvas-num">5</span>
           </div>
           <ul class="canvas-list">
-            <li><strong>B2B Fulfillment:</strong> Task infrastructure for local vendors (10&ndash;30% commission, delivery &amp; priority fees)</li>
-            <li><strong>Subscription (Students):</strong> &#8358;2k&ndash;&#8358;5k/mo for free deliveries, faster service &amp; priority runners</li>
-            <li><strong>Transaction Fees:</strong> 15&ndash;20% commission on peer-to-peer tasks</li>
+            <li><strong>Runner Commission:</strong> 20% platform fee from the runner payout on completed errands</li>
+            <li><strong>Requester Service Fee:</strong> 5% of item cost when Run-It handles purchase errands</li>
+            <li><strong>Escrow-Led Transactions:</strong> Revenue only after successful task completion and confirmation</li>
           </ul>
         </div>
       </div>
