@@ -57,10 +57,10 @@ export const unitEconomics = {
 
 export const fiveYearProjections = [
   { year: 1, users: "5,000", active: "30%", orders: "75k", revenue: "12.75M", cacCost: "6.67M", variableCost: "2.25M", contribution: "3.83M", cacPerUser: "\u20A61,333", revNum: 12.75 },
-  { year: 2, users: "25,000", active: "35%", orders: "438k", revenue: "74.38M", cacCost: "22.50M", variableCost: "13.13M", contribution: "38.75M", cacPerUser: "\u20A6900", revNum: 74.38 },
-  { year: 3, users: "70,000", active: "40%", orders: "1.40M", revenue: "238.00M", cacCost: "49.00M", variableCost: "42.00M", contribution: "147.00M", cacPerUser: "\u20A6700", revNum: 238 },
-  { year: 4, users: "120,000", active: "42%", orders: "2.52M", revenue: "428.40M", cacCost: "72.00M", variableCost: "75.60M", contribution: "280.80M", cacPerUser: "\u20A6600", revNum: 428.4 },
-  { year: 5, users: "200,000", active: "45%", orders: "4.50M", revenue: "765.00M", cacCost: "108.60M", variableCost: "135.00M", contribution: "521.40M", cacPerUser: "\u20A6543", revNum: 765 },
+  { year: 2, users: "25,000", active: "35%", orders: "438k", revenue: "74.38M", cacCost: "16.25M", variableCost: "13.13M", contribution: "45.00M", cacPerUser: "\u20A6650", revNum: 74.38 },
+  { year: 3, users: "70,000", active: "40%", orders: "1.40M", revenue: "238.00M", cacCost: "28.00M", variableCost: "42.00M", contribution: "168.00M", cacPerUser: "\u20A6400", revNum: 238 },
+  { year: 4, users: "120,000", active: "42%", orders: "2.52M", revenue: "428.40M", cacCost: "36.00M", variableCost: "75.60M", contribution: "316.80M", cacPerUser: "\u20A6300", revNum: 428.4 },
+  { year: 5, users: "200,000", active: "45%", orders: "4.50M", revenue: "765.00M", cacCost: "50.00M", variableCost: "135.00M", contribution: "580.00M", cacPerUser: "\u20A6250", revNum: 765 },
 ];
 
 export const tagline = `Campus Life Meets Convenience`;

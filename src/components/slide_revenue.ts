@@ -53,8 +53,8 @@ export function renderRevenue(): string {
           <span class="rtb-label">Base Unit</span>
           <span class="rtb-value">${unitEconomics.revenuePerOrder}/order</span>
           <span class="rtb-detail">Avg runner fee: <strong>${unitEconomics.avgRunnerFee}</strong> | Avg item cost: <strong>${unitEconomics.avgItemCost}</strong></span>
-          <span class="rtb-detail">CAC: <strong>${unitEconomics.cacCost}</strong> | Payback: <strong>${unitEconomics.payback}</strong></span>
-          <span class="rtb-detail">CAC tapers as referrals and campus density compound</span>
+          <span class="rtb-detail">Launch CAC: <strong>${unitEconomics.cacCost}</strong> | Payback: <strong>${unitEconomics.payback}</strong></span>
+          <span class="rtb-detail">CAC drops as materials, ambassadors, and referrals compound</span>
         </div>
       </div>
 
@@ -173,7 +173,7 @@ export function renderRevenue(): string {
                 <span>50 orders/year</span>
                 <span>&#8358;170 rev/order</span>
                 <span>&#8358;30 variable cost/order</span>
-                <span>CAC declines with campus density</span>
+                <span>CAC/user: &#8358;1,333 &rarr; &#8358;250</span>
              </div>
           </div>
         </div>
